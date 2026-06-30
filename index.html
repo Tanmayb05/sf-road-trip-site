@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join us on a 5-day road trip through California's coast: SF → San Jose → Big Sur → Monterey → Carmel → SF. Jul 9–13, 2026.">
+  <meta property="og:title" content="San Francisco Road Trip • Jul 9–13, 2026">
+  <meta property="og:description" content="5-day California coastal road trip with 5 friends. Experience Big Sur, Monterey, Carmel, and iconic San Francisco landmarks.">
+  <meta property="og:image" content="images/sf-website/sf-website-hero-road-trip.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>🌉</text></svg>">
+  <title>SF Road Trip • Jul 9–13, 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Sticky Nav -->
+  <nav class="sticky-nav">
+    <div class="nav-container">
+      <div class="nav-left">
+        <h2 class="nav-title">🌉 Road Trip</h2>
+        <ul class="nav-links">
+          <li><a href="#overview" data-section="overview">Overview</a></li>
+          <li><a href="#itinerary" data-section="itinerary">Itinerary</a></li>
+          <li><a href="#stay" data-section="stay">Stay</a></li>
+          <li><a href="#flights" data-section="flights">Flights</a></li>
+          <li><a href="#places" data-section="places">Places</a></li>
+          <li><a href="#gallery" data-section="gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">Jul 9–13, 2026 · 5 Friends</div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="overview" class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">California Coastal Road Trip</p>
+      <h1 class="hero-title">San Francisco<br>& The Coast</h1>
+      <p class="hero-subtitle">SF → San Jose → Henry Cowell Redwoods → Big Sur → Monterey → Carmel → 17 Mile Drive → SF</p>
+      <div class="hero-meta">
+        <span class="pill pill-date">📅 Jul 9–13, 2026</span>
+        <span class="pill pill-countdown" id="countdown-pill">⏳ Loading…</span>
+      </div>
+      <div class="hero-people">
+        <span class="people-chip"><span class="people-avatar" style="background: linear-gradient(135deg,#C0603A,#E8A030)">TB</span>Tanmay</span>
+        <span class="people-chip"><span class="people-avatar" style="background: linear-gradient(135deg,#4A9B8E,#2B7A6F)">TK</span>Tejas</span>
+        <span class="people-chip"><span class="people-avatar" style="background: linear-gradient(135deg,#8B5CF6,#6D28D9)">KP</span>Kinjal</span>
+        <span class="people-chip"><span class="people-avatar" style="background: linear-gradient(135deg,#EC4899,#BE185D)">AN</span>Antara</span>
+        <span class="people-chip"><span class="people-avatar" style="background: linear-gradient(135deg,#F59E0B,#D97706)">VS</span>Vaishnovi</span>
+      </div>
+    </div>
+    <div class="hero-scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Route Strip -->
+  <div class="route-strip">
+    <div class="route-container">
+      <div class="route-header reveal">
+        <h2>The Route</h2>
+        <p>~810 miles · 5 days · 5 friends · California's best coastline</p>
+      </div>
+      <div class="route-nodes" id="route-nodes">
+        <div class="route-node reveal" data-target="day-0" title="Arrivals — Jul 9">
+          <div class="node-icon">✈️</div>
+          <div class="node-label"><strong>SF / SJC</strong><small>Start Jul 9</small></div>
+        </div>
+        <div class="route-connector"></div>
+        <div class="route-node reveal reveal-delay-1" data-target="day-1" title="San Jose — Jul 9–10">
+          <div class="node-icon">🏙️</div>
+          <div class="node-label"><strong>San Jose</strong><small>Jul 9–10</small></div>
+        </div>
+        <div class="route-connector"></div>
+        <div class="route-node reveal reveal-delay-2" data-target="day-1" title="Henry Cowell — Jul 10">
+          <div class="node-icon">🌲</div>
+          <div class="node-label"><strong>Redwoods</strong><small>Jul 10</small></div>
+        </div>
+        <div class="route-connector"></div>
+        <div class="route-node reveal reveal-delay-3" data-target="day-1" title="Big Sur — Jul 10">
+          <div class="node-icon">🏔️</div>
+          <div class="node-label"><strong>Big Sur</strong><small>Jul 10</small></div>
+        </div>
+        <div class="route-connector"></div>
+        <div class="route-node reveal reveal-delay-4" data-target="day-2" title="Monterey — Jul 10–11">
+          <div class="node-icon">🦭</div>
+          <div class="node-label"><strong>Monterey</strong><small>Jul 10–11</small></div>
+        </div>
+        <div class="route-connector"></div>
+        <div class="route-node reveal reveal-delay-5" data-target="day-2" title="Carmel & 17 Mile — Jul 11">
+          <div class="node-icon">🌊</div>
+          <div class="node-label"><strong>Carmel</strong><small>Jul 11</small></div>
+        </div>
+        <div class="route-connector"></div>
+        <div class="route-node reveal reveal-delay-5" data-target="day-3" title="San Francisco — Jul 11–13">
+          <div class="node-icon">🌉</div>
+          <div class="node-label"><strong>SF</strong><small>Jul 11–13</small></div>
+        </div>
+      </div>
+      <div class="route-stats reveal">
+        <div class="stat-card"><span class="stat-icon">🗺️</span><div class="stat-info"><strong>~810 mi</strong><span>Total Distance</span></div></div>
+        <div class="stat-card"><span class="stat-icon">📅</span><div class="stat-info"><strong>5 Days</strong><span>Jul 9 – 13</span></div></div>
+        <div class="stat-card"><span class="stat-icon">🚗</span><div class="stat-info"><strong>~16 hrs</strong><span>Drive Time</span></div></div>
+        <div class="stat-card"><span class="stat-icon">👥</span><div class="stat-info"><strong>5 People</strong><span>Best Squad</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Itinerary -->
+  <section id="itinerary" class="itinerary">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Day by Day</span>
+      <h2>Itinerary at a Glance</h2>
+      <p>Every stop, every moment — mapped out.</p>
+    </div>
+    <div class="itinerary-grid">
+      <div class="itinerary-cards">
+
+        <!-- Day 0 -->
+        <div class="day-card reveal" id="day-0">
+          <div class="day-card-image-wrap">
+            <div class="emoji-placeholder">✈️</div>
+            <div class="day-card-image-overlay"></div>
+            <div class="day-number-badge">00</div>
+            <div class="day-label-overlay">DAY 0 · Thu Jul 9 · Arrivals</div>
+          </div>
+          <div class="day-content">
+            <ul>
+              <li>Everyone flies into SFO</li>
+              <li>Check-in: San Jose — Hyatt Place San Jose Airport</li>
+              <li>Settle in, dinner together</li>
+            </ul>
+            <a href="https://www.google.com/maps/dir/San+Francisco+International+Airport/82+Karina+Ct,+San+Jose,+CA+95131/" target="_blank" rel="noopener" class="map-link">📍 View on Maps</a>
+          </div>
+        </div>
+
+        <!-- Day 1 -->
+        <div class="day-card reveal" id="day-1">
+          <div class="day-card-image-wrap">
+            <img src="images/sf-website/sf-website-big-sur-bixby.png" alt="Big Sur and Bixby Bridge" class="day-image">
+            <div class="day-card-image-overlay"></div>
+            <div class="day-number-badge">01</div>
+            <div class="day-label-overlay">DAY 1 · Fri Jul 10 · Big Sur & Monterey</div>
+          </div>
+          <div class="day-content">
+            <ul>
+              <li>Depart San Jose early morning</li>
+              <li>Henry Cowell Redwoods State Park: Redwood Grove Loop, Fremont Tree, observation deck (1–2 hrs)</li>
+              <li>Drive to Big Sur: Bixby Bridge, Big Sur River Gorge, McWay Falls, Pfeiffer Beach (3–4 hrs)</li>
+              <li>Drive to Monterey — overnight</li>
+            </ul>
+            <a href="https://www.google.com/maps/dir/112+Giotto,+Irvine,+CA+92614,+USA/Big+Sur,+California/Bixby+Bridge/Point+Lobos+State+Natural+Reserve/" target="_blank" rel="noopener" class="map-link">📍 View on Maps</a>
+          </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="day-card reveal" id="day-2">
+          <div class="day-card-image-wrap">
+            <img src="images/sf-website/sf-website-monterey-carmel.png" alt="Monterey and Carmel" class="day-image">
+            <div class="day-card-image-overlay"></div>
+            <div class="day-number-badge">02</div>
+            <div class="day-label-overlay">DAY 2 · Sat Jul 11 · Carmel & 17 Mile Drive</div>
+          </div>
+          <div class="day-content">
+            <ul>
+              <li>Point Lobos State Reserve: China Cove, Bird Island Trail, Cypress Grove (2–3 hrs)</li>
+              <li>Carmel-by-the-Sea: beach, Ocean Ave, galleries (1–2 hrs)</li>
+              <li>17 Mile Drive: Lone Cypress, Seal Rock, Bird Rock, Cypress Point (2–3 hrs)</li>
+              <li>Drive back to SF — overnight at SF Airbnb</li>
+            </ul>
+            <a href="https://www.google.com/maps/dir/Big+Sur,+California/Monterey,+California/Carmel-By-The-Sea,+California/17+Mile+Dr,+California/Golden+Gate+Bridge,+San+Francisco/" target="_blank" rel="noopener" class="map-link">📍 View on Maps</a>
+          </div>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="day-card reveal" id="day-3">
+          <div class="day-card-image-wrap">
+            <img src="images/sf-website/sf-website-golden-gate-point-reyes.png" alt="Golden Gate Bridge and Point Reyes" class="day-image">
+            <div class="day-card-image-overlay"></div>
+            <div class="day-number-badge">03</div>
+            <div class="day-label-overlay">DAY 3 · Sun Jul 12 · San Francisco</div>
+          </div>
+          <div class="day-content">
+            <ul>
+              <li>Golden Gate Bridge walk</li>
+              <li>Palace of Fine Arts</li>
+              <li>Baker Beach / Marshall's Beach — GGB photos</li>
+              <li>Lombard Street · Chinatown · Twin Peaks</li>
+              <li>Optional: Point Reyes Lighthouse — scenic drive north</li>
+            </ul>
+            <a href="https://www.google.com/maps/dir/Golden+Gate+Bridge,+San+Francisco/Point+Reyes+Lighthouse,+Inverness,+CA/" target="_blank" rel="noopener" class="map-link">📍 View on Maps</a>
+          </div>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="day-card reveal" id="day-4">
+          <div class="day-card-image-wrap">
+            <div class="emoji-placeholder">✈️</div>
+            <div class="day-card-image-overlay"></div>
+            <div class="day-number-badge">04</div>
+            <div class="day-label-overlay">DAY 4 · Mon Jul 13 · Departure</div>
+          </div>
+          <div class="day-content">
+            <ul>
+              <li>Final morning in SF — free time</li>
+              <li>Drive to SFO (~30 min)</li>
+              <li>Return rental car</li>
+              <li>Flights home 🏠</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="itinerary-map reveal">
+        <iframe
+          src="https://maps.google.com/maps?f=d&source=s_d&saddr=San+Francisco,+CA&daddr=San+Jose,+CA+to:Henry+Cowell+Redwoods+State+Park,+Felton,+CA+to:Monterey,+CA+to:Big+Sur,+CA&hl=en&output=embed"
+          width="100%" height="100%"
+          style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accommodation -->
+  <section id="stay" class="accommodation">
+    <div class="accommodation-inner">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Where We Sleep</span>
+        <h2>Accommodation</h2>
+        <p>From lighthouse hostels to city Airbnbs.</p>
+      </div>
+      <div class="accommodation-cards">
+
+        <!-- Night -1 -->
+        <div class="stay-card reveal">
+          <div class="stay-image-wrap">
+            <img src="images/obsidian/obsidian-sfo-trip-stay-night--1.png" alt="Tejas family stay" loading="lazy">
+            <span class="night-pill">Night −1 · Wed Jul 8</span>
+          </div>
+          <div class="stay-content">
+            <h3>Tejas Mama Mami's Place</h3>
+            <span class="stay-who">Tanmay & Tejas</span>
+            <p>325 Berry St Apt 425, San Francisco, CA</p>
+            <p class="stay-time"><strong>Check-in:</strong> Wed Jul 8 · <strong>Check-out:</strong> Thu Jul 9</p>
+          </div>
+          <div class="stay-card-footer">
+            <a href="https://maps.app.goo.gl/Ayk2yCrmamerKg3F7" target="_blank" rel="noopener" class="map-link">📍 Maps</a>
+          </div>
+        </div>
+
+        <!-- Night 0 -->
+        <div class="stay-card reveal reveal-delay-1">
+          <div class="stay-image-wrap">
+            <img src="images/sf-travel-site/accomodation-night-0-hyatt-san-jose.png" alt="Hyatt Place San Jose" loading="lazy">
+            <span class="night-pill">Night 0 · Thu Jul 9</span>
+          </div>
+          <div class="stay-content">
+            <h3>Hyatt Place San Jose Airport</h3>
+            <span class="stay-who">All 5</span>
+            <p>82 Karina Ct, San Jose, CA 95131</p>
+            <p class="stay-time"><strong>Check-in:</strong> Thu Jul 9 · <strong>Check-out:</strong> Fri Jul 10</p>
+            <details class="stay-confirmation">
+              <summary>View Confirmation</summary>
+              <p><strong>Conf:</strong> 6398365658 · <strong>PIN:</strong> 8563</p>
+              <p><strong>Room:</strong> Queen Room w/ Two Queen Beds + Sofa Bed</p>
+            </details>
+          </div>
+          <div class="stay-card-footer">
+            <a href="https://maps.app.goo.gl/V13nF8Hb6ukZnPeG7" target="_blank" rel="noopener" class="map-link">📍 Maps</a>
+            <a href="https://www.booking.com/Share-4FaLn5I" target="_blank" rel="noopener" class="booking-link">🔗 Booking</a>
+          </div>
+        </div>
+
+        <!-- Night 1 -->
+        <div class="stay-card reveal reveal-delay-2">
+          <div class="stay-image-wrap">
+            <img src="images/sf-travel-site/accomodation-night-1-comfort-inn.png" alt="Comfort Inn Marina Monterey" loading="lazy">
+            <span class="night-pill">Night 1 · Fri Jul 10</span>
+          </div>
+          <div class="stay-content">
+            <h3>Comfort Inn Marina on the Monterey Bay</h3>
+            <span class="stay-who">All 5</span>
+            <p>140 Reservation Road, Marina, CA 93933</p>
+            <p class="stay-time"><strong>Check-in:</strong> Fri Jul 10 · <strong>Check-out:</strong> Sat Jul 11</p>
+            <details class="stay-confirmation">
+              <summary>View Confirmation</summary>
+              <p><strong>Booking ref:</strong> 6981707640</p>
+            </details>
+          </div>
+          <div class="stay-card-footer">
+            <a href="https://maps.app.goo.gl/JSsf4twr3fE7nKpY7" target="_blank" rel="noopener" class="map-link">📍 Maps</a>
+            <a href="https://www.booking.com/Share-KJAs9m" target="_blank" rel="noopener" class="booking-link">🔗 Booking</a>
+          </div>
+        </div>
+
+        <!-- Night 2 -->
+        <div class="stay-card reveal reveal-delay-3">
+          <div class="stay-image-wrap">
+            <img src="images/sf-travel-site/accomodation-night-2-airbnb-sf.png" alt="SF Airbnb" loading="lazy">
+            <span class="night-pill">Night 2 · Sat Jul 11</span>
+          </div>
+          <div class="stay-content">
+            <h3>Airbnb — Room in San Francisco</h3>
+            <span class="stay-who">All 5</span>
+            <p>700 Moscow Street, San Francisco, CA 94112</p>
+            <p class="stay-time"><strong>Check-in:</strong> Sat Jul 11, 3:00 PM · <strong>Check-out:</strong> Sun Jul 12, 11:00 AM</p>
+            <details class="stay-confirmation">
+              <summary>View Confirmation</summary>
+              <p><strong>Conf:</strong> HMRJFRMSR9</p>
+              <p><strong>Entry:</strong> Keypad — instructions 48h before</p>
+              <p><strong>Host:</strong> Silming (Yingming Zhou)</p>
+              <p><strong>Type:</strong> Ground room w/ private bath (4 guests)</p>
+            </details>
+          </div>
+          <div class="stay-card-footer">
+            <a href="https://maps.app.goo.gl/4XFrVsdCxgGRyGPU6" target="_blank" rel="noopener" class="map-link">📍 Maps</a>
+          </div>
+        </div>
+
+        <!-- Night 3 -->
+        <div class="stay-card reveal reveal-delay-4">
+          <div class="stay-image-wrap">
+            <img src="images/sf-travel-site/accomodation-night-3-airbnb-montara.png" alt="Point Montara Lighthouse Hostel" loading="lazy">
+            <span class="night-pill">Night 3 · Sun Jul 12</span>
+          </div>
+          <div class="stay-content">
+            <h3>HI Point Montara Lighthouse Hostel</h3>
+            <span class="stay-who">All 5</span>
+            <p>8800 Cabrillo Hwy, Montara, CA 94037</p>
+            <p class="stay-time"><strong>Check-in:</strong> Sun Jul 12, 3:00 PM · <strong>Check-out:</strong> Mon Jul 13, 11:00 AM</p>
+            <p class="stay-note">⚠️ 20 miles south of SF, 7 miles north of Half Moon Bay. Hidden driveway — approach from north.</p>
+            <details class="stay-confirmation">
+              <summary>View Confirmation</summary>
+              <p><strong>Conf:</strong> HMR5CYF999</p>
+              <p><strong>Type:</strong> Private Room Suite (5 guests, max 6)</p>
+              <p><strong>Host:</strong> Aaron Richard Chaffee</p>
+            </details>
+          </div>
+          <div class="stay-card-footer">
+            <a href="https://maps.app.goo.gl/z4s1UNibx7N3ZMWZ7" target="_blank" rel="noopener" class="map-link">📍 Maps</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Flights -->
+  <section id="flights" class="flights">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Getting There</span>
+      <h2>Flights</h2>
+      <p>5 cities, 5 flights, one squad.</p>
+    </div>
+
+    <!-- ── Flight Route Map ──────────────────────────────────── -->
+    <div class="route-map-card reveal">
+
+      <!-- Traveler filter chips -->
+      <div class="route-map-chips" id="routeMapChips" role="group" aria-label="Filter routes by traveler">
+        <button class="route-chip active" data-traveler="all">
+          <span class="route-chip-label">All Routes</span>
+        </button>
+        <button class="route-chip" data-traveler="tanmay">
+          <span class="route-chip-avatar" style="background:linear-gradient(135deg,#C0603A,#E8A030)">TB</span>
+          <span class="route-chip-label">Tanmay</span>
+        </button>
+        <button class="route-chip" data-traveler="tejas">
+          <span class="route-chip-avatar" style="background:linear-gradient(135deg,#4A9B8E,#2B7A6F)">TK</span>
+          <span class="route-chip-label">Tejas</span>
+        </button>
+        <button class="route-chip" data-traveler="kinjal">
+          <span class="route-chip-avatar" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9)">KP</span>
+          <span class="route-chip-label">Kinjal</span>
+        </button>
+        <button class="route-chip" data-traveler="antara">
+          <span class="route-chip-avatar" style="background:linear-gradient(135deg,#EC4899,#BE185D)">AN</span>
+          <span class="route-chip-label">Antara</span>
+        </button>
+        <button class="route-chip" data-traveler="vaishnovi">
+          <span class="route-chip-avatar" style="background:linear-gradient(135deg,#F59E0B,#D97706)">VS</span>
+          <span class="route-chip-label">Vaishnovi</span>
+        </button>
+      </div>
+
+      <!-- Two-layer SVG map viewport -->
+      <div class="route-map-viewport" id="routeMapViewport">
+
+        <!-- Layer 1: Static base map (non-interactive) -->
+        <svg class="route-map-base" viewBox="0 0 960 600" preserveAspectRatio="xMidYMid meet" aria-hidden="true" id="usBaseSVG">
+<path class="us-state" d="M612.1,454.3L612.1,454.3L612.1,454.3ZM606.8,365.0L606.8,364.8L646.0,361.5L656.9,400.3L662.8,411.1L660.5,413.7L659.8,419.4L662.0,425.3L661.7,431.5L663.8,434.8L622.6,439.1L622.2,441.6L626.2,444.8L627.2,449.2L625.0,452.3L621.1,453.0L618.6,450.5L616.5,445.5L615.0,452.4L610.8,451.9L607.3,423.5L608.1,385.8L608.6,366.8Z"/>
+  <path class="us-state" d="M170.1,497.5L170.1,497.5L170.1,497.5ZM169.0,509.5L169.0,509.5L169.0,509.5ZM166.6,510.8L166.6,510.8L166.6,510.8ZM165.9,510.9L165.9,510.9L165.9,510.9ZM165.5,510.7L165.5,510.7L165.5,510.7ZM165.6,516.9L165.6,516.9L165.6,516.9ZM164.8,512.3L164.8,512.3L164.8,512.3ZM164.5,503.0L164.9,501.9L165.2,502.0ZM163.8,512.4L163.8,512.4L163.8,512.4ZM162.7,504.2L162.7,504.2L162.7,504.2ZM160.3,518.0L161.2,517.9L161.6,516.4L162.1,516.6L162.8,514.7L164.0,514.2L163.4,515.6L165.2,516.0L164.9,517.3L163.1,517.2L163.0,517.9L161.8,518.5ZM159.8,509.3L159.8,509.3L159.8,509.3ZM157.7,527.0L157.7,527.0L157.7,527.0ZM157.0,528.0L158.0,527.5L158.5,528.2ZM155.6,522.6L156.1,521.6L157.5,520.7L158.4,520.7L158.7,521.7L158.5,519.7L159.3,519.2L160.6,519.4L160.2,518.7L162.2,518.9L162.2,519.5L163.6,518.6L164.2,520.0L163.7,519.9L163.7,521.0L164.8,520.9L164.1,522.2L162.7,521.7L163.2,522.4L162.9,523.1L161.9,522.8L161.4,523.8L162.3,524.0L160.4,524.5L158.4,526.7L157.8,526.7L158.8,525.4L158.4,525.3L159,524.0L157.3,526.0L156.5,525.1L156.4,523.9ZM155.4,528.7L156.4,527.6L156.9,527.9L155.7,528.9ZM151.9,532.6L152.5,532.1L152.5,533.0ZM148.3,531.1L148.3,531.1L148.3,531.1ZM148.1,530.0L148.1,530.0L148.1,530.0ZM146.4,527.7L146.4,527.7L146.4,527.7ZM144.2,528.9L144.2,528.9L144.2,528.9ZM140.4,532.0L140.4,532.0L140.4,532.0ZM139.5,531.6L139.5,531.6L139.5,531.6ZM138.3,538.0L138.3,538.0L138.3,538.0ZM138.5,532.4L138.5,532.4L138.5,532.4ZM137.8,537.6L137.8,537.6L137.8,537.6ZM137.2,538.4L137.2,538.4L137.2,538.4ZM137.2,536.0L137.8,535.6L137.7,537.0ZM136.4,538.3L136.4,538.3L136.4,538.3ZM136.5,536.8L136.5,536.8L136.5,536.8ZM135.6,534.9L135.6,534.9L135.6,534.9ZM134.9,537.4L135.6,536.8L135.7,535.8L136.6,536.0L136.4,536.5ZM137.0,512.9L137.0,512.9L137.0,512.9ZM134.8,534.2L134.8,534.2L134.8,534.2ZM136.6,512.9L136.6,512.9L136.6,512.9ZM132.9,534.7L133.5,534.2L134.0,534.7L134.0,536.0L133.0,535.7ZM134.3,513.3L134.5,512.6L135.8,512.0L135.0,513.4ZM130.7,535.1L130.7,535.1L130.7,535.1ZM129.7,535.0L129.7,535.0L129.7,535.0ZM128.8,535.6L129.2,535.2L130.1,535.8ZM126.7,536.5L127.5,536.4L127.1,537.3ZM133.2,480.2L134.1,480.0L134.1,480.5ZM124.8,539.5L124.9,539.2L126.6,540.1L126.1,540.3ZM124.4,532.9L124.4,532.9L124.4,532.9ZM116.9,539.9L116.9,539.9L116.9,539.9ZM115.5,540.3L115.5,540.3L115.5,540.3ZM114.4,540.3L114.4,540.3L114.4,540.3ZM114.1,540.5L114.1,540.5L114.1,540.5ZM113.9,539.1L114.9,539.5L114.2,540.1ZM112.2,539.5L112.7,539.1L113.7,540.1L112.3,540.1ZM111.6,540.4L111.6,540.4L111.6,540.4ZM115.1,499.6L116.8,500.0L117.6,499.3L118.7,499.3L119.5,498.9L119.6,499.7L120.8,500.1L120.5,501.6L120.7,502.6L119.2,502.7L118.6,503.3L118.0,502.5L117.3,502.4L115.3,500.6ZM104.5,543.5L106.5,543.2L107.5,542.1L108.7,541.6L107.9,540.7L108.4,540.1L110.0,539.9L110.4,540.8L111,540.1L111.5,540.8L110.0,541.9L111.8,541.3L110.9,542.3L109.8,542.5L108.9,543.5L107.4,543.3L105.3,544.1ZM120.5,464.2L121.0,463.9L122.9,463.2L125.3,462.0L127.4,461.1L129.2,460.5L131.3,460.1L132.6,460.2L133.0,460.6L132.2,462.8L132.4,463.7L135.1,463.9L136.0,464.4L136.7,464.2L137.5,464.7L138.4,463.3L139.9,463.5L139.6,462.9L138.6,462.3L137.6,462.6L137.8,461.5L136.9,460.0L136.4,459.9L136.1,459.0L137.0,458.6L137.6,459.7L137.4,460.6L138.5,462.0L139.2,461.9L137.9,460.1L138.6,458.6L138.4,458.0L136.5,458.3L133.5,456.9L133.5,455.4L133.3,454.1L130.5,450.5L129.3,449.7L128.6,448.5L127.6,447.9L128.5,447.5L129.0,446.6L129.4,444.7L131.4,445.2L134.0,445.1L135.9,444.0L136.7,443.1L137.2,441.1L137.7,439.9L139.6,437.7L140.7,436.9L142.0,437.3L143.1,436.9L144.5,435.9L145.9,434.5L147.0,434.1L147.5,434.6L149.5,434.5L150.7,433.8L152.3,431.7L152.9,431.7L154.9,432.6L155.0,433.1L154.0,433.9L154.1,434.7L154.7,434.8L155.0,434.0L155.8,433.5L156.1,432.7L157.0,433.5L157.1,434.8L157.9,435.2L158.6,434.4L160.0,434.2L161.4,434.4L162.2,434.8L161.7,435.7L161.8,436.2L163.4,436.5L163.1,437.3L163.8,437.2L164.7,437.6L165.0,437.1L166.1,436.8L166.4,437.3L168.4,436.4L169.9,437.1L170.3,436.9L171.0,437.6L171.3,437.3L172.2,437.7L172.5,438.1L173.7,438.3L174.3,438.1L176.7,437.9L177.8,438.6L178.9,439.0L179.6,438.8L179.9,438.3L181.8,437.3L182.5,437.2L183.7,437.7L187.1,439.3L188.1,439.5L197.9,489.0L200.0,499.2L201.6,499.5L201.6,498.9L203.3,499.3L204.0,498.2L205.9,497.6L206.0,499.4L207.8,500.2L208.5,501.2L212.4,503.6L213.4,505.6L215.0,503.5L215.8,503.2L216.0,502.4L215.6,501.2L216.2,501.1L215.8,500.3L217.0,499.5L218.2,498.2L220.1,499.3L220.2,500.2L220.8,501.0L221.7,501.0L223.1,502.0L223.9,503.0L225.4,503.4L227.5,504.8L227.3,505.2L228.8,506.3L233.7,511.1L233.6,512.0L234.8,511.9L234.9,513.1L235.9,513.2L236.4,514.5L237.3,514.1L239.4,514.8L240.5,514.6L241.9,515.0L242.3,515.6L243.4,515.3L244.0,515.9L244.1,517.5L244.6,518.6L245.8,520.3L245.3,522.9L244.5,524.6L243.4,524.3L242.7,522.8L242.1,522.2L242.4,521.4L242.1,519.9L241.4,518.6L240.8,518.3L241.8,519.7L242.1,521.6L241.8,522.3L240.8,522.4L238.9,521.5L238.9,520.3L238.5,518.7L238.3,521.4L237.0,520.5L237.2,519.5L236.8,518.8L236.2,519.7L235.3,518.5L234.5,518.5L234.2,517.9L234.6,516.9L235.3,516.7L234.8,515.8L235.5,515.8L233.9,515.1L233.7,514.3L232.8,514.1L231.6,513.1L229.6,512.8L229.4,511.5L228.1,509.6L229.9,509.8L228.2,509.1L227.7,509.1L226.1,507.8L225.6,506.4L225.5,507.0L223.8,507.2L222.8,505.8L221.0,504.0L220.4,502.6L219.4,501.4L218.7,501.7L219.8,502.6L220.1,503.6L221.4,505.4L222.5,508.0L221.7,507.9L220.9,507.0L219.4,507.6L218.9,506.1L218.0,505.0L217.6,505.5L215.2,504.8L215.1,505.2L216.4,505.3L217.8,506.0L218.9,507.7L217.4,509.3L215.9,508.4L215.4,508.6L213.1,507.6L212.1,506.8L211.9,506.2L210.4,505.3L206.3,504.1L204.7,503.4L205.4,502.8L204.9,501.1L205.0,499.9L204.5,501.5L203.0,502.7L201.1,502.8L199.2,502.3L199.5,501.4L198.5,501.8L195.4,501.6L194.2,501.7L190.1,503.0L189.0,504.5L189.4,503.5L190.5,502.6L189.6,502.0L187.6,501.9L187.7,500.4L186.4,501.4L184.8,500.6L183.6,500.7L183.7,501.4L181.9,502.2L182.0,500.8L182.5,500.9L184.5,499.8L182.9,499.6L183.6,498.9L182.3,499.5L181.5,499.2L182.9,498.6L181.9,498.7L181.2,497.8L181.5,496.7L180.5,498.0L180.1,496.9L179.9,498.1L179.3,498.5L178.7,497.3L178.6,498.6L178.2,499.0L176.9,499.1L177.8,496.7L177.0,497.9L176.7,497.5L176.2,499.6L177.0,499.6L176.5,501.4L177.2,500.6L177.7,501.5L177.3,502.9L178.4,504.0L177.7,504.9L177.0,505.0L176.6,503.6L176.4,505.0L174.2,504.9L173.3,505.8L173.6,505.0L173.1,504.0L173.1,505.4L172.7,506.6L172.2,505.2L172.3,507.3L171.7,507.1L170.4,508.8L170.4,507.7L169.6,508.8L169.1,508.8L168.3,510.2L167.3,510.3L166.9,509.9L166.4,510.7L165.0,510.1L165.3,509.0L167.3,507.8L168.2,506.5L166.5,507.6L165.3,506.7L165.8,505.0L166.7,503.8L167.1,501.6L166.6,500.4L167.8,499.9L169.7,498.2L170.4,499.1L171.0,499.3L171.7,498.6L173.8,499.0L171.7,498.2L170.6,497.4L171.7,495.8L172.5,495.4L171.9,495.1L171.2,495.9L170.9,496.8L169.4,496.9L168.8,496.6L167.7,497.4L167.3,498.3L166.3,498.5L165.3,499.6L165.2,500.4L163.7,501.9L164.0,502.7L163.0,503.8L162.4,503.8L163.0,504.8L162.2,506.1L161.5,506.4L161.4,507.3L160.0,507.7L159.3,508.9L157.9,509.5L157.5,511.0L160.3,512.1L160.7,512.7L160.3,513.6L159.4,514.4L158.6,514.5L158.1,515.4L158.3,516.0L157.6,517.6L156.7,518.1L154.9,518.3L154.5,519.3L153.7,519.5L153.5,520.3L153.0,519.8L152.3,521.3L151.2,521.2L151.2,522.0L150.6,521.8L149.3,522.9L150.1,522.7L150.1,523.7L149.2,524.9L148.0,525.0L146.9,526.3L146.3,525.6L145.6,526.6L144.3,527.4L144.4,528.0L142.7,527.9L142.1,528.8L143.4,529.6L142.0,530.4L141.9,531.1L138.2,531.7L138.0,532.9L137.2,533.5L137.8,531.9L137.0,531.6L134.8,533.0L134.2,533.8L133.0,533.3L131.5,534.3L130.5,534.1L131.2,532.5L130.3,532.5L129.9,533.8L128.6,535.6L127.9,535.2L127.7,535.8L126.7,535.7L126.7,534.4L125.9,534.5L126.4,535.1L126.3,536.2L125.2,536.4L124.5,535.0L123.9,535.4L124.5,536.2L123.1,536.9L122.1,538.0L121.3,537.7L119.7,537.8L119.1,538.5L118.0,538.8L117.2,538.5L117.1,537.3L118.0,537.0L119.3,535.5L119.6,535.8L121.4,535.1L122.7,535.2L123.0,536.5L123.4,536.4L123.6,534.8L125.3,534.7L125.3,534.1L126.3,533.4L128.0,531.7L129.8,530.6L132.3,530.1L133.5,530.1L132.9,531.4L133.3,532.0L133.5,531.0L134.6,531.3L135.2,532.0L135.5,531.6L134.3,530.5L135.3,528.6L137.4,527.1L140.7,525.3L141.6,525.7L141.8,524.2L142.8,522.9L145.5,521.0L146.0,517.3L146.7,517.0L146.2,516.3L146.6,514.8L147.9,513.6L148.5,511.9L147.8,512.5L144.3,514.0L142.9,512.7L143.3,511.4L142.3,512.2L141.9,513.3L142.3,514.7L141.1,515.1L140.2,512.9L139.1,511.5L138.4,512.4L137.1,511.2L137.2,510.4L135.6,511.3L133.6,512.2L133.4,512.7L132.0,513.3L131.5,512.5L132.1,511.8L132.2,510.6L131.6,508.5L132.9,507.2L132.0,504.1L131.3,502.5L130.7,503.6L128.7,504.2L126.8,504.4L125.3,503.9L125.3,502.6L124.7,502.2L123.9,500.6L122.7,499.5L123.3,499.1L121.9,498.6L123.6,497.7L123.6,496.7L123.1,496.2L123.9,495.7L123.0,494.6L122.1,495.0L122.1,493.8L121.4,492.7L122.0,492.3L121.6,491.8L120.8,492.0L121.0,491.2L122.0,491.1L121.3,490.0L122.7,490.1L122.5,489.3L123.0,488.2L126.1,485.1L126.0,484.4L127.1,482.5L127.8,481.9L129.0,481.7L129.8,482.2L130.9,483.5L131.7,483.5L133.0,482.5L134.3,481.0L136.3,481.5L137.6,481.2L138.8,479.6L138.5,477.5L138.6,476.5L137.9,475.4L137.2,475.1L137.7,474.5L138.6,474.8L139.3,474.1L139.4,473.4L138.4,472.0L137.9,472.9L137.0,472.7L135.5,473.3L134.4,474.1L133.5,475.3L133.5,474.2L132.7,473.1L132.3,473.4L133.0,474.3L132.4,474.2L131.5,473.5L129.2,473.2L127.4,473.7L124.2,472.1L123.7,471.0L124.0,470.1L123.1,468.2L123.8,468.5L124.7,467.6L124.4,467.2L122.1,466.3L120.5,464.8ZM99.2,545.3L100.5,544.4L100.8,543.5L102.3,542.9L102.8,542.0L104.2,541.7L105.0,542.2L104.6,543.0L102.8,543.6L101.6,544.7ZM98.3,545.7L98.3,545.7L98.3,545.7ZM96.7,543.9L96.7,543.9L96.7,543.9ZM102.2,520.8L103.3,521.2L102.5,521.4ZM96.8,543.3L96.8,543.3L96.8,543.3ZM95.5,544.5L96.5,544.5L96.5,545.3ZM95.2,544.1L95.2,544.1L95.2,544.1ZM94.7,545.2L94.7,545.2L94.7,545.2ZM100.9,516.8L100.9,516.8L100.9,516.8ZM92.0,545.3L92.7,544.8L92.8,545.5ZM90.7,545.1L90.7,545.1L90.7,545.1ZM89.9,545.5L89.9,545.5L89.9,545.5ZM107.1,475.1L107.8,473.7L108.0,474.5L109.8,475.7L111.1,475.2L112.1,476.0L112.1,476.8L113.3,477.9L115.6,479.0L114.9,479.8L113.4,479.4L112.4,480.6L112.0,479.6L110.8,477.9L109.6,476.7L109.0,476.5L107.8,477.0L107.1,476.4ZM84.5,545.3L85.4,544.9L85.3,545.7ZM98.0,493.3L98.6,493.5L100.3,495.3L98.8,494.5ZM98.3,492.1L98.3,492.1L98.3,492.1ZM78.7,544.7L80.5,545.1L81.3,545.7L82.9,546.2L80.7,546.0L79.0,545.3ZM73.6,543.8L75.0,544.0L77.9,543.9L77.9,543.2L78.8,542.8L79.3,543.7L78.3,544.1L78.6,544.7L77.5,544.5L75.8,544.6ZM72.8,543.8L72.8,543.8L72.8,543.8ZM73.1,542.5L73.1,542.5L73.1,542.5ZM71.9,543.6L71.9,543.6L71.9,543.6ZM71.1,543.2L71.1,543.2L71.1,543.2ZM70.4,542.3L71.2,542.8L70.2,543.2ZM69.7,543.8L70.8,543.6L69.9,544.3ZM66.4,544.0L67.6,543.1L67.9,542.2L68.7,542.3L68.4,543.3L69.6,543.5L69.3,544.3L68.6,544.0L67.1,544.4ZM65.2,541.6L65.2,541.6L65.2,541.6ZM63.8,542.5L66.0,542.5L66.8,542.3L66.0,543.3ZM62.2,540.7L63.4,540.9L63.7,541.9L62.9,542.1ZM59.9,541.7L59.9,541.7L59.9,541.7ZM59.1,541.6L59.1,541.6L59.1,541.6ZM59.6,540.3L59.6,540.3L59.6,540.3ZM58.1,542.6L58.1,542.6L58.1,542.6ZM57.4,543.0L57.4,543.0L57.4,543.0ZM53.9,536.6L54.9,537.2L54.1,537.5ZM49.8,537.3L49.8,537.3L49.8,537.3ZM50.0,535.0L50.0,535.0L50.0,535.0ZM48.8,535.6L48.8,535.6L48.8,535.6ZM48.9,534.1L48.9,534.1L48.9,534.1ZM45.2,533.4L46.5,533.4L45.5,533.9ZM41.7,528.3L41.7,528.3L41.7,528.3ZM36.3,523.0L36.3,523.0L36.3,523.0ZM36.0,522.7L36.0,522.7L36.0,522.7ZM35.7,522.4L35.7,522.4L35.7,522.4ZM32.8,523.5L34.1,523.5L34.0,524.5ZM31.3,518.8L32.1,518.7L33.8,519.7L34.4,521.2L32.1,520.3L31.9,519.2ZM241.8,523.0L241.8,523.0L241.8,523.0ZM241.2,524.2L241.9,523.7L241.9,524.6ZM240.8,524.4L240.8,524.4L240.8,524.4ZM240.5,523.9L240.3,522.3L241.2,522.6L241.4,523.7ZM239.0,522.1L239.9,522.2L239.9,523.5ZM234.4,515.8L234.4,515.8L234.4,515.8ZM234.4,516.7L234.4,516.7L234.4,516.7ZM233.9,516.1L233.9,516.1L233.9,516.1ZM236.2,525.8L236.2,525.8L236.2,525.8ZM233.2,518.1L233.2,518.1L233.2,518.1ZM232.7,517.4L233.0,516.6L234.2,516.7L234.3,517.4L233.6,517.9ZM233.7,523.5L233.7,523.5L233.7,523.5ZM234.0,527.2L234.0,527.2L234.0,527.2ZM232.2,522.6L232.2,522.6L232.2,522.6ZM231.9,522.4L231.9,522.4L231.9,522.4ZM232.0,523.8L233.1,522.7L233.6,522.7L233.5,523.8L232.7,524.6L232.6,523.8ZM230.9,520.7L231.5,519.2L230.9,519.0L231.0,518.0L232.5,517.7L234.0,519.3L235.1,519.6L236.3,520.9L237.8,521.9L236.3,521.6L237.9,522.5L238.1,523.5L238.6,522.9L239.0,523.4L238.8,524.8L239.3,524.4L239.8,526.4L237.9,526.5L238.4,525.9L237.2,525.5L236.9,524.2L236.4,524.6L236.6,525.5L235.9,525.4L235.5,524.4L234.8,524.3L236.3,526.3L236.8,525.8L237.6,526.7L237.6,527.4L236.8,527.4L235.2,526.2L234.5,524.6L233.7,524.9L234.6,523.3L233.7,522.5L231.7,521.7L232.1,521.2L232.0,520.0L231.4,521.0ZM228.1,512.4L228.1,512.4L228.1,512.4ZM230.6,521.1L230.6,521.1L230.6,521.1ZM229.1,521.6L229.1,521.6L229.1,521.6ZM227.2,515.8L227.5,515.1L229.0,515.2L228.1,514.3L228.5,513.7L230.5,513.7L231.3,513.4L232.3,514.3L234.1,515.4L233.3,516.2L232.1,516.4L232.1,517.0L231.3,516.9L230.5,517.5L230.1,516.9L230.2,520.0L229.7,520.8L229.1,520.2L228.5,518.7L228.5,517.5L228.1,517.5ZM222.4,506.5L224.1,507.5L225.5,507.3L225.6,507.8L227.0,509.2L227.3,510.0L225.9,509.0L227.9,511.3L227.8,512.4L226.5,514.7L225.7,513.6L226.0,512.4L224.4,510.6L224.3,509.9L222.9,507.7ZM222.0,505.9L222.0,505.9L222.0,505.9ZM220.0,503.0L220.0,503.0L220.0,503.0ZM221.9,513.8L222.4,512.3L223.9,512.8L224.6,512.7L225.0,513.7L226.6,516.7L227.6,520.3L227.0,520.0L225.5,518.4L224.3,517.3L223.6,517.3L223.6,515.6L223.0,515.3L223.2,514.2L222.6,514.5ZM220.0,507.5L220.0,507.5L220.0,507.5ZM221.5,514.7L221.7,514.0L222.7,514.6L222.7,516.0L222.0,516.3L222.1,515.4ZM218.2,506.4L218.2,506.4L218.2,506.4ZM218.7,508.4L218.7,508.4L218.7,508.4ZM217.9,511.1L217.7,510.1L219.4,508.8L219.9,508.1L221.3,508.7L223.1,508.8L223.2,509.9L224.6,512.1L223.7,512.6L221.7,511.7L222.1,512.9L221.8,513.8L221.1,513.7L219.7,512.8L218.8,511.5ZM185.1,501.2L185.1,501.2L185.1,501.2ZM184.0,501.2L184.0,501.2L184.0,501.2ZM179.4,498.5L179.4,498.5L179.4,498.5ZM179.0,500.0L179.0,500.0L179.0,500.0ZM179.3,502.6L179.3,502.6L179.3,502.6ZM178.2,505.8L178.8,504.4L179.7,503.5L180.5,501.7L181.0,502.4L179.5,504.8L179.9,505.1ZM177.8,502.8L178.2,501.3L178.9,500.5L178.5,503.4ZM177.3,499.7L177.3,499.7L177.3,499.7Z"/>
+  <path class="us-state" d="M198.2,384.0L201.3,383.9L202.4,378.9L199.7,377.2L200.6,371.3L203.6,369.5L205.1,366.6L205.4,362.2L207.5,359.6L212.6,357.3L210.2,353.2L209.2,347.9L207.3,344.5L207.8,342.1L209.3,339.8L209.0,333.8L210.1,321.6L215.9,321.8L218.7,324.6L220.8,321.8L223.6,306.8L296.6,318.9L281.9,424.5L250.1,419.7L231.2,408.8L195.9,387.9Z"/>
+  <path class="us-state" d="M306.8,244.2L376.2,251.9L404.1,253.9L402.9,272.7L399.5,329.4L385.3,328.3L328.4,323.1L296.6,318.9L301.4,283.3Z"/>
+  <path class="us-state" d="M749.2,538.2L749.2,538.2L749.2,538.2ZM747.7,539.5L747.7,539.5L747.7,539.5ZM743.3,542.0L743.3,542.0L743.3,542.0ZM732.0,546.3L737.6,540.9L741.4,542.9ZM728.7,547.3L728.7,547.3L728.7,547.3ZM726.0,547.3L726.0,547.3L726.0,547.3ZM718.6,508.5L718.6,508.5L718.6,508.5ZM712.8,547.9L712.8,547.9L712.8,547.9ZM671.7,456.6L671.7,456.6L671.7,456.6ZM663.8,434.8L666.6,439.9L709.0,437.0L710.3,440.8L712.4,440.3L711.5,432.6L712.6,431.6L720.9,432.6L722.9,440.0L726.3,448.7L733.5,460.8L741.0,469.5L742.6,478.5L746.7,484.6L753.7,497.0L756.0,504.6L756.7,521.2L755.2,521.0L754.4,529.4L756.8,526.6L755.0,531.8L753.5,531.3L742.9,534.4L741.3,529.7L737.7,524.5L731.6,521.6L730.5,522.6L726.1,513.4L720.9,509.3L721.9,506.1L718.7,507.3L709.3,494.8L713.5,487.9L708.1,485.1L710.3,488.7L708.6,491.2L705.9,488.4L704.8,481.9L706.0,482.4L707.3,477.4L705.9,468.9L703.4,464.7L700.2,464.5L692.8,459.1L692.2,456.3L688.1,452.8L681.4,449.6L677.5,450.2L676.7,454.0L673.6,454.2L668.5,458.1L664.6,458.9L666.1,461.1L661.0,460.3L660.4,455.9L650.7,450.6L644.4,448.9L639.0,448.8L625.0,452.3L627.2,449.2L626.2,444.8L622.2,441.6L622.6,439.1Z"/>
+  <path class="us-state" d="M646.0,361.5L665.4,359.1L683.6,356.5L680.9,360.9L680.9,362.9L686.5,366.2L688.5,365.8L691.7,371.6L694.7,375.1L699.9,378.0L701.0,380.1L705.9,383.0L705.8,384.9L709.3,388.2L713.6,390.0L715.9,397.1L718.2,398.0L721.4,402.6L722.0,405.8L725.8,406.7L722.9,413.0L721.8,423.0L720.4,424.6L720.9,432.6L712.6,431.6L711.5,432.6L712.4,440.3L710.3,440.8L709.0,437.0L666.6,439.9L663.8,434.8L661.7,431.5L662.0,425.3L659.8,419.4L660.5,413.7L662.8,411.1L656.9,400.3Z"/>
+  <path class="us-state" d="M605.8,238.1L610.1,239.3L615.4,236.2L643.1,233.3L643.2,234.5L646.4,260.5L648.8,283.0L647.8,284.1L649.6,288.8L644.9,291.3L640.6,291.4L641.4,294.5L638.2,299.4L636.0,300.1L635.2,305.0L630.1,304.9L629.1,303.2L626.5,305.5L626.9,307.7L622.6,306.9L618.1,311.2L614.2,308.7L610.9,308.3L606.2,310.3L605.0,312.1L603.8,310.3L606.8,303.0L611.2,293.7L610.6,289.8L608.4,286.0L609.7,282.4Z"/>
+  <path class="us-state" d="M402.9,272.7L498.5,275.5L500.0,277.3L504.6,278.7L501.4,284.3L505.4,290.2L508.6,292.0L509.1,332.0L426.6,330.7L399.5,329.4Z"/>
+  <path class="us-state" d="M852.2,143.5L852.2,143.5L852.2,143.5ZM850.8,144.6L850.8,144.6L850.8,144.6ZM849.4,141.3L849.4,141.3L849.4,141.3ZM846.0,144.5L846.0,144.5L846.0,144.5ZM847.1,151.6L847.1,151.6L847.1,151.6ZM845.3,147.1L845.3,147.1L845.3,147.1ZM844.3,144.7L844.3,144.7L844.3,144.7ZM827.9,172.5L822.6,167.7L821.9,164.2L815.9,144.8L812.0,133.2L815.2,133.8L815.6,128.2L819.5,119.9L818.0,116.9L818.0,111.8L819.4,109.7L818.8,104.5L824.4,88.2L826.8,88.1L827.6,91.1L829.8,92.0L837.0,86.5L844.0,89.9L849.9,108.8L851.4,114.7L856.2,114.7L857.5,120.6L860.2,122.8L862.3,121.4L866.5,127.0L864.8,130.8L862.9,130.1L860.8,135.9L858.0,134.8L855.6,139.8L850.0,142.8L850.3,147.6L845.8,143.1L845.1,139.6L843.4,147.8L844.6,149.4L842.8,151.7L838.8,153.5L835.7,157.8L834.4,156.7L830.1,162.6L830.2,166.1L828.6,167.2Z"/>
+  <path class="us-state" d="M842.3,202.7L842.3,202.7L842.3,202.7ZM834.6,204.0L837.0,200.8L839.7,202.7ZM795.7,186.9L806.4,184.6L821.9,181.2L824.6,177.3L827.3,176.3L828.7,179.4L831.3,179.4L827.3,185.4L833.6,189.9L833.2,192.0L836.2,194.5L840.5,195.3L843.4,192.6L845.0,194.5L839.6,197.1L836.0,199.9L835.6,196.7L830.0,202.4L828.2,199.4L827.6,198.9L825.9,198.0L824.0,193.8L818.5,195.5L818.4,195.2L795.8,200.4L795.3,199.8Z"/>
+  <path class="us-state" d="M473.4,107.1L499.2,107.2L499.1,100.1L503.2,101.7L505.6,111.9L510.8,113.5L515.7,113.9L516.2,115.9L520.3,115.2L521.7,113.7L526.3,113.6L532.3,116.7L534.2,120.8L535.5,118.2L542.5,120.8L544.4,123.6L548.4,122.7L552.8,119.5L554.5,122.1L562.4,121.4L565.8,123.5L569.5,123.1L564.7,126.5L557.8,129.3L550.6,135.3L546.4,140.6L538.8,147.2L539.9,148.7L536.3,149.6L536.7,160.6L531.4,164.2L529.4,170.1L532.6,172.6L531.2,175.4L530.9,185.2L534.6,188.8L537.5,189.2L538.7,191.0L542.9,192.9L543.7,195.3L549.7,198.8L552.0,201.8L553.1,208.1L482.5,209.7L482.7,175.9L479.7,173.9L477.4,170.2L481.1,166.1L481.3,164.1L480.9,156.7L478.4,150.5L477.8,132.9L474.4,123.1L474.1,115.5L475.0,113.0Z"/>
+  <path class="us-state" d="M777.7,251.3L778.2,250.1L779.0,247.7L787.2,239.1L781.4,235.3L778.3,230.7L779.7,226.9L778.1,225.3L782.5,216.9L794.7,221.0L794.2,227.1L793.9,227.7L792.0,231.2L796.6,232.7L797.5,244.3L795.5,251.1L792.2,255.9L791.0,260.7L788.7,262.2L789.0,257.9L784.6,257.2L778.7,254.3L777.8,251.7Z"/>
+  <path class="us-state" d="M790.1,319.9L790.1,319.9L790.1,319.9ZM789.3,336.8L789.3,336.8L789.3,336.8ZM700.6,323.9L721.0,321.4L770.4,312.3L785.6,309.0L789.0,315.9L793.6,322.0L789.9,318.6L786.4,311.4L783.2,310.3L786.0,314.8L779.1,320.5L775.8,320.8L776.2,322.8L785.0,319.9L787.0,325.7L786.6,321.4L788.8,319.7L790.6,322.0L790.8,326.6L789.1,327.1L786.4,332.4L779.7,332.6L772.6,331.6L781.8,334.6L778.8,341.8L783.1,338.3L785.8,340.0L783.4,347.2L780.9,345.7L775.7,347.4L768.8,353.5L765.6,359.0L764.7,365.1L761.2,364.6L756.0,366.8L735.7,352.2L718.8,354.7L718.7,352.5L714.2,349.2L695.4,351.1L683.6,356.5L665.4,359.1L665.3,354.6L669.2,352.7L668.9,350.7L672.3,347.4L676.5,346.7L679.8,343.2L683.3,341.9L688.0,335.7L688.5,337.4L693.9,333.0L696.7,333.2L700.2,327.5Z"/>
+  <path class="us-state" d="M388.9,103.0L473.4,107.1L475.0,113.0L474.1,115.5L474.4,123.1L477.8,132.9L478.4,150.5L480.9,156.7L481.3,164.1L384.2,159.5Z"/>
+  <path class="us-state" d="M385.3,328.3L399.5,329.4L426.6,330.7L509.1,332.0L509.2,341.4L512.3,362.2L512.0,395.2L506.1,393.3L504.5,391.1L500.5,389.3L499.5,390.9L494.8,389.8L491.2,391.7L486.4,391.7L483.7,394.3L479.0,391.5L475.0,391.0L474.7,389.5L470.7,393.6L470.0,390.1L466.4,391.8L462.7,388.6L460.4,391.0L458.7,388.5L452.4,385.2L450.5,386.9L442.9,383.7L439.8,383.7L439.6,381.4L432.0,380.2L427.7,376.8L429.2,340.3L384.6,337.7Z"/>
+  <path class="us-state" d="M701.1,220.9L710.5,213.8L711.4,218.8L770.9,207.1L774.8,209.3L776.3,213.5L782.5,216.9L778.1,225.3L779.7,226.9L778.3,230.7L781.4,235.3L787.2,239.1L779.0,247.7L776.6,247.5L774.1,250.3L722.6,260.4L708.0,262.9L705.2,245.8Z"/>
+  <path class="us-state" d="M382.5,177.1L384.2,159.5L481.3,164.1L481.1,166.1L477.4,170.2L479.7,173.9L482.7,175.9L482.5,209.7L481.1,214.8L481.7,218.1L480.1,224.6L482.6,228.6L480.3,228.3L479.3,225.5L470.9,221.4L463.5,221.3L461.2,223.2L454.7,218.6L412.3,216.9L379.4,214.4Z"/>
+  <path class="us-state" d="M384.6,337.7L429.2,340.3L427.7,376.8L432.0,380.2L439.6,381.4L439.8,383.7L442.9,383.7L450.5,386.9L452.4,385.2L458.7,388.5L460.4,391.0L462.7,388.6L466.4,391.8L470.0,390.1L470.7,393.6L474.7,389.5L475.0,391.0L479.0,391.5L483.7,394.3L486.4,391.7L491.2,391.7L494.8,389.8L499.5,390.9L500.5,389.3L504.5,391.1L506.1,393.3L512.0,395.2L514.0,397.0L518.9,396.7L518.9,396.7L519.1,406.7L519.5,426.0L523.4,431.5L522.9,433.3L528.0,441.0L527.8,447.7L524.6,457.0L525.8,462.0L522.3,466.7L523.7,469.0L518.9,470.0L508.4,475.2L512.2,471.5L509.1,472.4L509.8,468.0L504.8,469.9L506.7,476.5L509.3,476.0L498.8,484.8L485.0,491.8L478.2,496.8L472.0,502.6L467.1,511.5L465.7,516.5L466.0,523.2L468.5,532.3L465.3,523.1L466.0,512.8L468.1,507.6L473.4,499.1L481.4,494.6L475.6,493.8L475.4,496.7L468.6,499.4L471.7,500.1L469.0,504.0L464.5,503.1L467.8,506.5L465.1,513.4L464.1,522.9L464.9,529.0L467.1,532.9L467.1,536.3L469.2,538.8L465.4,540.9L458.2,536.7L451.5,536.6L447.0,533.4L443.8,533.1L441.0,530.5L436.2,529.2L433.9,521.5L431.0,518.1L431.2,513.9L429.7,512.6L430.7,509.4L428.8,506.5L424.4,503.4L423.6,500.0L417.9,494.1L416.4,488.4L414.8,486.9L412.3,478.6L406.4,471.6L403.3,470.2L403.5,468.3L400.0,465.2L390.7,464.6L386.8,462.6L385.3,464.5L381.0,464.9L378.1,468.6L376.4,474.4L372.4,478.2L369.7,478.1L365.9,474.9L356.2,469.5L350.8,464.2L348.5,458.7L348.5,452.8L344.6,444.0L338.7,440.2L335.8,435.7L330.8,429.8L327.0,427.5L324.8,422.3L322.6,421.0L321.6,416.8L377.4,422.0L378.9,402.5L380.5,385.6L384.0,337.6Z"/>
+  <path class="us-state" d="M382.5,177.1L379.4,214.4L376.2,251.9L306.8,244.2L279.2,240.1L282.2,221.4L289.5,175.6L291.0,165.9Z"/>
+  <path class="us-state" d="M795.8,200.4L818.4,195.2L818.5,195.5L821.3,206.2L821.0,208.2L814.1,211.1L807.3,213.2L798.2,220.4L796.7,218.5L799.5,215.7L798.2,214.4Z"/>
+  <path class="us-state" d="M492.0,264.5L508.4,264.6L526.0,264.1L548.7,262.6L553.2,266.8L552.1,269.5L552.5,273.3L554.5,279.0L564.3,287.9L565.4,293.6L568.1,292.8L573.4,294.6L572.7,299.1L570.3,304.4L570.6,306.8L576.1,311.1L583.5,315.8L585.2,321.3L584.0,323.4L587.7,328.7L590.1,328.8L590.1,334.7L586.5,338.1L585.4,338.3L584.6,338.3L585.0,342.5L582.4,347.8L572.8,348.5L576.9,343.1L575.6,338.9L509.2,341.4L509.1,332.0L508.6,292.0L505.4,290.2L501.4,284.3L504.6,278.7L500.0,277.3L498.5,275.5L495.9,270.8L494.1,269.6Z"/>
+  <path class="us-state" d="M682.2,291.6L686.1,290.5L687.8,287.0L686.6,283.8L688.7,279.1L691.1,281.7L692.1,275.7L695.6,270.9L699.3,270.5L703.7,263.7L703.8,256.8L705.0,251.9L703.3,247.4L705.2,245.8L708.0,262.9L722.6,260.4L724.2,270.0L728.8,264.0L730.9,264.3L732.7,260.5L737.5,261.6L740.8,257.6L745.4,259.3L748.6,263.2L747.8,267.0L739.4,262.2L739.6,267.9L734.4,276.6L732.3,275.3L729.3,284.3L723.9,281.8L723.8,284.9L721.3,290.1L720.6,293.9L717.4,300.1L718.0,303.5L715.0,304.5L709.6,308.7L705.4,310.8L703.1,309.2L698.9,312.4L694.8,310.0L693.7,306.8L688.6,305.0L682.4,297.0Z"/>
+  <path class="us-state" d="M553.2,266.8L553.9,262.6L557.2,261.1L559.1,256.3L559.2,253.0L556.7,250.4L557.5,247.1L562.9,245.8L567.1,243.2L569.0,239.0L568.9,233.2L565.9,231.5L561.9,226.2L600.7,223.8L600.5,227.4L603.0,231.4L605.8,238.1L609.7,282.4L608.4,286.0L610.6,289.8L611.2,293.7L606.8,303.0L603.8,310.3L605.0,312.1L603.3,314.8L604.7,318.3L599.1,320.4L599.8,326.3L592.9,324.0L590.6,325.1L590.1,328.8L587.7,328.7L584.0,323.4L585.2,321.3L583.5,315.8L576.1,311.1L570.6,306.8L570.3,304.4L572.7,299.1L573.4,294.6L568.1,292.8L565.4,293.6L564.3,287.9L554.5,279.0L552.5,273.3L552.1,269.5Z"/>
+  <path class="us-state" d="M296.6,318.9L328.4,323.1L385.3,328.3L384.6,337.7L384.0,337.6L380.5,385.6L378.9,402.5L377.4,422.0L321.6,416.8L322.6,421.0L296.2,417.9L295.2,426.3L281.9,424.5Z"/>
+  <path class="us-state" d="M509.2,341.4L575.6,338.9L576.9,343.1L572.8,348.5L582.4,347.8L583.7,349.9L579.3,353.3L581.1,354.8L576.6,359.1L578.5,364.4L574.9,367.3L576.0,368.8L572.1,371.1L571.0,373.6L571.6,378.2L568.9,379.5L567.3,385.0L564.2,387.4L565.8,390.5L562.3,395.0L564.1,396.6L564.8,402.9L563.9,405.4L519.1,406.7L518.9,396.7L518.9,396.7L514.0,397.0L512.0,395.2L512.3,362.2Z"/>
+  <path class="us-state" d="M142.3,357.0L145.5,359.1L143.7,360.3ZM140.3,365.2L143.2,369.9L141.2,369.0ZM135.5,355.1L135.5,355.1L135.5,355.1ZM132.4,343.9L132.4,343.9L132.4,343.9ZM126.7,357.0L126.7,357.0L126.7,357.0ZM125.3,341.2L130.3,344.0L125.6,343.1ZM120.1,341.3L123.3,341.5L121.5,343.7ZM117.3,339.9L117.3,339.9L117.3,339.9ZM105.6,180.6L119.7,184.6L147.6,192.8L161.4,196.4L161.4,196.4L147.3,251.1L159.7,269.6L171.0,286.7L188.9,313.7L207.8,342.1L207.3,344.5L209.2,347.9L210.2,353.2L212.6,357.3L207.5,359.6L205.4,362.2L205.1,366.6L203.6,369.5L200.6,371.3L199.7,377.2L202.4,378.9L201.3,383.9L198.2,384.0L160.7,379.6L159.4,376.7L160.0,368.1L158.2,363.6L150.0,353.4L146.3,352.9L145.7,347.0L141.6,346.7L136.1,342.6L135.8,340.1L132.3,336.4L127.6,335.3L123.9,333.1L118.9,332.3L117.0,329.2L119.8,319.4L116.5,316.1L117.6,314.2L113.4,307.3L109.3,295.6L107.5,293.3L107.6,289.5L111.4,284.3L110.1,280.5L107.6,280.3L104.6,274.7L104.8,268.4L106.1,263.7L107.8,263.5L107.3,267.7L110.4,271.3L110.4,266.9L108.3,260.7L111.0,259.9L109.7,257.6L106.1,262.9L103.0,258.5L100.3,257.6L102.2,253.3L101.0,249.0L98.9,246.1L95.3,237.4L96.5,235.8L96.3,229.7L98.2,226.4L98.6,221.1L94.0,211.3L94.3,207.9L99.7,201.5L101.6,196.2L104.5,191.3L104.8,185.5L103.8,184.3Z"/>
+  <path class="us-state" d="M777.7,251.3L777.8,251.7L777.7,251.3ZM774.1,250.3L776.6,247.5L779.0,247.7L778.2,250.1L778.0,254.5L780.7,256.8L782.2,261.2L786.2,265.3L787.5,265.1L789.6,271.4L780.5,273.3Z"/>
+  <path class="us-state" d="M758.5,268.7L761.6,268.9L760.2,271.1Z"/>
+  <path class="us-state" d="M330.1,530.0L334.2,524.8L333.3,520.3L343.8,524.8L347.3,527.9L347.2,530.0L352.2,534.1L349.2,537.3L343.6,538.9L339.8,541.4L337.0,545.4L333.2,543.1L333.1,537.4ZM318.8,508.2L319.8,506.2L322.8,508.6L325.4,507.6L331.0,510.5L330.0,513.1L323.4,514.1L322.9,510.8ZM318.7,515.4L318.7,515.4L318.7,515.4ZM312.4,508.5L316.9,510.0L314.1,511.6ZM308.1,504.8L308.9,502.6L318.6,503.8L315.7,505.8ZM291.1,495.9L296.6,493.5L298.8,498.2L302.1,501.2L294.0,501.1ZM264.8,487.3L268.4,483.8L271.6,483.7L273.4,486.0L272.5,489.2L268.0,489.9ZM256.8,490.6L256.8,490.6L256.8,490.6Z"/>
+  <path class="us-state" d="M482.5,209.7L553.1,208.1L553.5,210.9L555.5,212.7L554.0,214.9L556.0,222.2L560.9,223.9L561.9,226.2L565.9,231.5L568.9,233.2L569.0,239.0L567.1,243.2L562.9,245.8L557.5,247.1L556.7,250.4L559.2,253.0L559.1,256.3L557.2,261.1L553.9,262.6L553.2,266.8L548.7,262.6L526.0,264.1L508.4,264.6L492.0,264.5L490.3,261.9L491.3,258.6L489.6,251.4L489.6,247.9L487.4,246.7L487.7,241.6L484.9,237.0L482.6,228.6L480.1,224.6L481.7,218.1L481.1,214.8Z"/>
+  <path class="us-state" d="M590.1,328.8L590.6,325.1L592.9,324.0L599.8,326.3L599.1,320.4L604.7,318.3L603.3,314.8L605.0,312.1L606.2,310.3L610.9,308.3L614.2,308.7L618.1,311.2L622.6,306.9L626.9,307.7L626.5,305.5L629.1,303.2L630.1,304.9L635.2,305.0L636.0,300.1L638.2,299.4L641.4,294.5L640.6,291.4L644.9,291.3L649.6,288.8L647.8,284.1L648.8,283.0L654.1,282.1L658.1,287.5L663.5,288.0L666.4,289.8L668.3,288.2L671.5,289.7L677.1,285.9L678.2,288.9L682.2,291.6L682.4,297.0L688.6,305.0L693.7,306.8L688.8,312.7L683.8,316.3L682.1,320.8L678.7,324.1L671.2,327.8L671.0,328.1L644.4,330.7L628.1,331.7L609.4,333.8L606.2,333.2L606.7,336.6L586.5,338.1L590.1,334.7ZM585.4,338.3L584.6,338.3L585.4,338.3Z"/>
+  <path class="us-state" d="M778.2,283.5L777.5,283.7L778.2,283.5ZM776.1,280.7L776.1,280.7L776.1,280.7ZM769.3,269.6L769.3,269.6L769.3,269.6ZM722.6,260.4L774.1,250.3L780.5,273.3L789.6,271.4L788.7,279.8L782.9,282.6L779.8,283.9L779.3,278.3L776.6,276.9L774.6,278.7L771.3,274.6L772.2,271.8L775.4,272.3L769.3,268.1L770.2,258.9L772.3,253.9L767.0,261.9L768.5,265.2L767.3,268.3L768.5,274.3L771.1,277.2L771.1,281.0L765.7,280.7L761.8,277.5L759.4,279.6L758.0,277.5L759.5,274.3L760.2,271.1L761.6,268.9L758.5,268.7L752.2,266.4L752.7,264.2L748.6,263.2L745.4,259.3L740.8,257.6L737.5,261.6L732.7,260.5L730.9,264.3L728.8,264.0L724.2,270.0Z"/>
+  <path class="us-state" d="M636.0,156.7L640.1,157.9L638.3,158.8ZM626.6,159.3L626.6,159.3L626.6,159.3ZM624.8,158.6L624.8,158.6L624.8,158.6ZM624.0,163.0L624.4,159.9L625.7,162.6ZM622.7,160.6L622.7,160.6L622.7,160.6ZM620.9,166.3L620.9,166.3L620.9,166.3ZM619.2,172.1L619.2,172.1L619.2,172.1ZM618.2,174.7L618.2,174.7L618.2,174.7ZM610.1,164.1L610.1,164.1L610.1,164.1ZM615.4,236.2L617.9,233.5L621.8,222.7L622.0,217.5L621.1,212.0L615.7,200.4L616.9,197.8L615.3,193.1L618.0,187.2L617.5,180.7L619.6,179.6L619.6,176.9L622.9,175.3L624.9,170.6L626.0,178.4L628.4,175.1L628.0,168.7L633.6,165.8L630.6,162.7L634.6,158.2L639.0,160.3L642.2,160.2L644.6,162.6L652.2,164.1L656.0,169.9L654.0,171.8L656.7,175.7L656.9,182.7L654.4,184.8L654.3,188.4L651.1,190.1L650.0,194.7L654.1,197.3L658.7,189.4L663.1,187.0L667.3,190.5L670.5,201.9L672.4,205.8L672.1,213.4L668.1,213.6L667.7,218.3L665.5,219.8L664.6,225.9L661.7,231.4L643.2,234.5L643.1,233.3ZM573.8,125.0L580.9,119.6L583.7,118.4L580.9,122.0L575.5,125.8ZM560.5,150.2L565.4,147.9L568.3,145.1L572.8,144.4L583.2,136.0L587.9,131.7L592.7,131.0L593.9,132.2L587.7,136.5L585.3,141.0L585.4,144.9L587.9,141.5L595.3,142.7L599.5,148.1L604.8,147.6L605.5,148.7L609.9,148.3L615.3,143.8L623.6,142.8L630.2,140.3L629.9,145.7L635.6,146.4L640.0,143.6L643.0,151.4L645.8,153.0L646.2,150.9L649.3,150.7L650.0,154.0L642.7,153.7L639.5,154.9L635.6,153.2L633.7,156.8L631.0,154.5L624.4,153.6L622.7,156.2L619.6,157.5L615.9,157.0L614.0,160.5L609.6,163.2L611.8,159.5L608.5,159.8L606.7,163.0L605.5,160.4L599.2,174.9L597.1,173.2L598.1,170.4L595.5,170.6L595.5,170.6L595.8,164.4L591.0,162.1L591.3,160.1L585.9,158.7L582.3,159.0L578.1,157.1L564.6,154.3L561.4,150.7L561.4,150.7Z"/>
+  <path class="us-state" d="M609.2,454.8L609.2,454.8L609.2,454.8ZM605.0,454.6L605.0,454.6L605.0,454.6ZM601.5,455.4L601.5,455.4L601.5,455.4ZM598.7,455.2L598.7,455.2L598.7,455.2ZM563.9,405.4L564.8,402.9L564.1,396.6L562.3,395.0L565.8,390.5L564.2,387.4L567.3,385.0L568.9,379.5L571.6,378.2L571.0,373.6L572.1,371.1L576.0,368.8L574.9,367.3L606.8,365.0L608.6,366.8L608.1,385.8L607.3,423.5L610.8,451.9L609.7,452.9L602.8,452.0L599.8,452.7L592.9,456.7L587.1,448.1L588.3,441.6L558.3,443.4L558.0,438.3L560.0,438.0L559.6,433.4L561.4,432.5L561.9,428.7L566.5,421.8L564.7,420.5L568.5,417.7L565.2,415.3L566.8,412.6L564.4,412.2L565.5,407.5Z"/>
+  <path class="us-state" d="M241.8,81.1L388.9,103.0L384.2,159.5L382.5,177.1L291.0,165.9L289.5,175.6L285.9,169.7L284.1,173.5L273.6,171.2L271.9,173.2L266.8,171.6L265.5,173.8L263.8,171.7L263.2,165.4L259.3,163.0L260.0,159.4L257.2,153.8L257.3,148.6L255.3,146.3L249.9,149.9L247.6,147.5L248.2,143.6L250.4,142.5L250.1,139.6L254.3,128.9L247.3,122.8L247.7,121.7L244.0,114.6L239.8,110.5L240.8,105.5L237.8,99.6Z"/>
+  <path class="us-state" d="M808.1,139.9L808.6,135.4L812.0,133.2L815.9,144.8L821.9,164.2L822.6,167.7L827.9,172.5L827.3,176.3L824.6,177.3L821.9,181.2L806.4,184.6L804.5,182.7L805.3,179.4L803.5,169.0L804.9,164.8L805.7,158.4L804.6,154.3L807.2,152.9L809.6,149.4L807.8,145.2Z"/>
+  <path class="us-state" d="M818.9,210.0L818.9,210.0L818.9,210.0ZM818.2,213.3L818.2,213.3L818.2,213.3ZM816.8,212.0L816.8,212.0L816.8,212.0ZM793.9,227.7L792.0,231.2L793.9,227.7ZM750.0,175.6L750.0,175.6L750.0,175.6ZM748.9,175.5L748.9,175.5L748.9,175.5ZM710.5,213.8L717.8,207.1L721.0,202.1L718.2,198.8L716.5,193.8L723.9,190.3L729.0,189.3L734.3,189.3L737.0,190.5L744.6,188.2L747.7,186.2L750.7,182.2L753.1,181.5L752.2,176.5L752.8,173.8L749.4,172.7L749.5,169.5L754.1,165.3L755.4,162.1L760.0,155.0L765.5,150.3L774.4,148.8L784.6,145.9L785.7,152.9L787.8,156.1L787.6,163.8L790.0,168.5L789.7,172.1L792.3,172.2L795.0,186.0L795.7,186.9L795.3,199.8L795.8,200.4L798.2,214.4L799.5,215.7L796.7,218.5L798.2,220.4L797.9,222.7L800.7,220.6L812.1,217.1L815.1,213.2L819.2,215.1L815.9,218.4L805.8,225.4L796.2,229.4L794.2,227.1L794.7,221.0L782.5,216.9L776.3,213.5L774.8,209.3L770.9,207.1L711.4,218.8Z"/>
+  <path class="us-state" d="M671.9,232.5L671.9,232.5L671.9,232.5ZM670.3,231.9L670.3,231.9L670.3,231.9ZM643.2,234.5L661.7,231.4L669.4,234.6L670.6,233.0L676.0,236.2L682.1,232.7L685.9,232.7L689.4,228.6L694.8,224.3L701.1,220.9L705.2,245.8L703.3,247.4L705.0,251.9L703.8,256.8L703.7,263.7L699.3,270.5L695.6,270.9L692.1,275.7L691.1,281.7L688.7,279.1L686.6,283.8L687.8,287.0L686.1,290.5L682.2,291.6L678.2,288.9L677.1,285.9L671.5,289.7L668.3,288.2L666.4,289.8L663.5,288.0L658.1,287.5L654.1,282.1L648.8,283.0L646.4,260.5Z"/>
+  <path class="us-state" d="M137.1,106.8L139.9,109.8L142.1,109.7L144.7,114.8L143.8,120.4L149.4,124.2L156.0,122.9L159.6,123.5L163.4,126.9L171.9,126.6L176.2,128.0L179.8,127.0L190.9,127.7L192.9,127.0L219.1,133.2L220.3,136.9L222.3,138.1L223.3,141.6L216.0,151.1L214.0,155.2L212.3,155.6L208.9,159.9L208.2,163.5L211.9,166.4L208.7,172.8L201.3,205.9L161.4,196.4L161.4,196.4L161.4,196.4L147.6,192.8L119.7,184.6L105.6,180.6L104.4,178.4L105.1,171.8L106.4,169.7L105.8,164.1L114.9,150.7L116.9,146.5L125.8,125.1L129.1,116.0L129.9,110.7L132.2,107.1Z"/>
+  <path class="us-state" d="M582.4,347.8L585.0,342.5L584.6,338.3L585.4,338.3L586.5,338.1L606.7,336.6L606.2,333.2L609.4,333.8L628.1,331.7L644.4,330.7L671.0,328.1L671.2,327.8L700.6,323.9L700.2,327.5L696.7,333.2L693.9,333.0L688.5,337.4L688.0,335.7L683.3,341.9L679.8,343.2L676.5,346.7L672.3,347.4L668.9,350.7L669.2,352.7L665.3,354.6L665.4,359.1L646.0,361.5L606.8,364.8L606.8,365.0L574.9,367.3L578.5,364.4L576.6,359.1L581.1,354.8L579.3,353.3L583.7,349.9Z"/>
+  <path class="us-state" d="M241.5,214.5L282.2,221.4L279.2,240.1L306.8,244.2L301.4,283.3L296.6,318.9L223.6,306.8Z"/>
+  <path class="us-state" d="M778.6,285.5L778.6,285.5L778.6,285.5ZM782.9,282.6L788.7,279.8L785.2,286.2L785.1,291.7L783.6,297.4L782.1,298.8L780.5,296.5L780.6,289.8ZM778.2,283.5L777.5,283.7L778.2,283.5ZM693.7,306.8L694.8,310.0L698.9,312.4L703.1,309.2L705.4,310.8L709.6,308.7L715.0,304.5L718.0,303.5L717.4,300.1L720.6,293.9L721.3,290.1L723.8,284.9L723.9,281.8L729.3,284.3L732.3,275.3L734.4,276.6L739.6,267.9L739.4,262.2L747.8,267.0L748.6,263.2L752.7,264.2L752.2,266.4L758.5,268.7L760.2,271.1L759.5,274.3L757.4,277.4L758.7,280.3L762.2,278.7L763.4,281.6L768.6,281.8L770.5,283.7L775.1,285.4L774.3,291.0L776.9,294.7L774.4,295.0L777.7,300.4L775.8,303.0L770.2,299.9L775.3,304.5L777.3,302.9L782.3,302.5L785.6,309.0L770.4,312.3L721.0,321.4L700.6,323.9L671.2,327.8L678.7,324.1L682.1,320.8L683.8,316.3L688.8,312.7Z"/>
+  <path class="us-state" d="M155.5,90.8L156.9,88.3L157.5,90.8ZM160.0,69.2L160.0,69.2L160.0,69.2ZM160.1,65.7L160.1,65.7L160.1,65.7ZM159.1,68.3L159.1,68.3L159.1,68.3ZM157.0,74.5L159.9,71.8L160.5,74.2L157.6,75.0L160.7,79.3L159.5,81.2ZM157.4,63.7L157.4,63.7L157.4,63.7ZM155.8,65.1L155.8,65.1L155.8,65.1ZM157.1,59.6L157.1,59.6L157.1,59.6ZM153.7,66.4L157.7,65.4L159.5,66.9L157.6,70.8L154.9,69.4ZM153.8,64.7L153.8,64.7L153.8,64.7ZM229.9,78.5L226.2,94.2L219.2,125.4L219.1,133.2L192.9,127.0L190.9,127.7L179.8,127.0L176.2,128.0L171.9,126.6L163.4,126.9L159.6,123.5L156.0,122.9L149.4,124.2L143.8,120.4L144.7,114.8L142.1,109.7L139.9,109.8L137.1,106.8L135.2,105.4L130.6,104.6L136.1,97.5L133.0,96.1L133.3,93.1L137.0,93.3L133.8,90.9L133.6,84.4L134.0,75.6L132.8,73.8L133,68.5L135.2,64.8L142.1,71.3L145.4,72.3L153.0,76.1L156.7,76.0L156.7,80.6L151.3,85.2L154.3,84.4L158.3,81.1L158.1,84.1L153.8,93.1L157.9,91.7L157.9,87.3L159.4,83.3L162.5,79.9L160.0,74.9L162.1,74.8L161.8,71.2L163.0,66.2L160.5,64.7L161.1,60.8Z"/>
+  <path class="us-state" d="M607.1,169.4L607.1,169.4L607.1,169.4ZM601.9,172.7L601.9,172.7L601.9,172.7ZM559.4,142.2L559.4,142.2L559.4,142.2ZM558.8,144.6L558.8,144.6L558.8,144.6ZM557.1,143.8L557.1,143.8L557.1,143.8ZM555.8,145.4L555.8,145.4L555.8,145.4ZM556.0,143.1L556.0,143.1L556.0,143.1ZM555.5,142.0L555.5,142.0L555.5,142.0ZM555.5,146.5L555.5,146.5L555.5,146.5ZM552.8,142.9L552.8,142.9L552.8,142.9ZM539.9,148.7L546.3,147.4L553.0,143.7L555.9,144.5L553.6,150.1L556.3,148.1L560.5,150.2L561.4,150.7L561.4,150.7L564.6,154.3L578.1,157.1L582.3,159.0L585.9,158.7L591.3,160.1L591.0,162.1L595.8,164.4L595.5,170.6L595.5,170.6L598.1,170.4L597.1,173.2L599.2,174.9L594.7,182.3L595.1,185.9L597.6,183.6L599.4,179.7L602.0,178.2L603.7,173.1L605.9,170.6L606.4,174.4L604.7,176.8L601.8,184.9L601.7,191.9L600.2,193.4L599.3,197.7L600.0,201.4L598.0,210.0L600.7,223.8L561.9,226.2L560.9,223.9L556.0,222.2L554.0,214.9L555.5,212.7L553.5,210.9L553.1,208.1L552.0,201.8L549.7,198.8L543.7,195.3L542.9,192.9L538.7,191.0L537.5,189.2L534.6,188.8L530.9,185.2L531.2,175.4L532.6,172.6L529.4,170.1L531.4,164.2L536.7,160.6L536.3,149.6Z"/>
+  <path class="us-state" d="M379.4,214.4L412.3,216.9L454.7,218.6L461.2,223.2L463.5,221.3L470.9,221.4L479.3,225.5L480.3,228.3L482.6,228.6L484.9,237.0L487.7,241.6L487.4,246.7L489.6,247.9L489.6,251.4L491.3,258.6L490.3,261.9L492.0,264.5L494.1,269.6L495.9,270.8L498.5,275.5L402.9,272.7L404.1,253.9L376.2,251.9Z"/>
+  <path class="us-state" d="M683.6,356.5L695.4,351.1L714.2,349.2L718.7,352.5L718.8,354.7L735.7,352.2L756.0,366.8L753.5,368.2L748.9,375.1L748.5,380.5L746.3,384.7L743.7,384.6L743.3,387.1L737.7,393.8L730.7,397.7L731.6,400.2L728.9,401.9L725.8,406.7L722.0,405.8L721.4,402.6L718.2,398.0L715.9,397.1L713.6,390.0L709.3,388.2L705.8,384.9L705.9,383.0L701.0,380.1L699.9,378.0L694.7,375.1L691.7,371.6L688.5,365.8L686.5,366.2L680.9,362.9L680.9,360.9Z"/>
+  <path class="us-state" d="M219.1,133.2L219.2,125.4L226.2,94.2L229.9,78.5L241.8,81.1L237.8,99.6L240.8,105.5L239.8,110.5L244.0,114.6L247.7,121.7L247.3,122.8L254.3,128.9L250.1,139.6L250.4,142.5L248.2,143.6L247.6,147.5L249.9,149.9L255.3,146.3L257.3,148.6L257.2,153.8L260.0,159.4L259.3,163.0L263.2,165.4L263.8,171.7L265.5,173.8L266.8,171.6L271.9,173.2L273.6,171.2L284.1,173.5L285.9,169.7L289.5,175.6L282.2,221.4L241.5,214.5L201.3,205.9L208.7,172.8L211.9,166.4L208.2,163.5L208.9,159.9L212.3,155.6L214.0,155.2L216.0,151.1L223.3,141.6L222.3,138.1L220.3,136.9Z"/>
+  <path class="us-state" d="M161.4,196.4L161.4,196.4L201.3,205.9L241.5,214.5L223.6,306.8L220.8,321.8L218.7,324.6L215.9,321.8L210.1,321.6L209.0,333.8L209.3,339.8L207.8,342.1L188.9,313.7L171.0,286.7L159.7,269.6L147.3,251.1Z"/>
+  <path class="us-state" d="M784.6,145.9L808.1,139.9L807.8,145.2L809.6,149.4L807.2,152.9L804.6,154.3L805.7,158.4L804.9,164.8L803.5,169.0L805.3,179.4L804.5,182.7L806.4,184.6L795.7,186.9L795.0,186.0L792.3,172.2L789.7,172.1L790.0,168.5L787.6,163.8L787.8,156.1L785.7,152.9Z"/>
+  <path class="us-state" d="M603.5,458.4L603.5,458.4L603.5,458.4ZM596.0,458.8L596.0,458.8L596.0,458.8ZM592.1,468.9L592.1,468.9L592.1,468.9ZM580.4,477.6L580.4,477.6L580.4,477.6ZM577.5,478.0L577.5,478.0L577.5,478.0ZM574.4,478.9L574.4,478.9L574.4,478.9ZM553.3,469.9L558.3,470.4L556.6,472.0ZM519.1,406.7L563.9,405.4L565.5,407.5L564.4,412.2L566.8,412.6L565.2,415.3L568.5,417.7L564.7,420.5L566.5,421.8L561.9,428.7L561.4,432.5L559.6,433.4L560.0,438.0L558.0,438.3L558.3,443.4L588.3,441.6L587.1,448.1L592.9,456.7L588.4,459.6L591.2,462.8L593.8,458.6L595.8,461.6L595.1,466.4L591.4,466.9L594.2,471.5L599.3,471.9L601.4,475.1L600.7,478.4L598.2,475.1L596.5,476.3L592.2,473.4L588.9,473.1L583.0,477.9L579.3,473.2L576.9,474.0L573.4,479.2L570.8,476.8L564.6,474.9L564.1,470.9L562.4,471.8L559.6,467.0L555.8,467.6L555.2,465.3L551.6,467.2L551.8,469.6L548.4,471.2L543.6,470.4L534.4,467.3L529.6,467.4L523.7,469.0L522.3,466.7L525.8,462.0L524.6,457.0L527.8,447.7L528.0,441.0L522.9,433.3L523.4,431.5L519.5,426.0Z"/>
+  <path class="us-state" d="M828.2,199.4L830.0,202.4L827.1,203.2ZM826.0,200.3L826.0,200.3L826.0,200.3ZM826.5,204.0L826.5,204.0L826.5,204.0ZM825.1,210.3L825.1,210.3L825.1,210.3ZM821.0,208.2L821.3,206.2L818.5,195.5L824.0,193.8L825.9,198.0L827.6,198.9L825.1,198.1L825.8,206.0Z"/>
+        </svg>
+
+        <!-- Layer 2+3: Route arcs + airport pins (interactive) -->
+        <svg class="route-map-overlay" viewBox="0 0 960 600" preserveAspectRatio="xMidYMid meet"
+             id="routeMapSVG" role="img" aria-label="Flight route map showing paths from each traveler's home airport to San Francisco">
+          <defs id="routeMapDefs"></defs>
+          <!-- route-group elements appended by JS -->
+          <g class="airport-pins" id="airportPins"></g>
+        </svg>
+
+        <!-- Floating tooltip -->
+        <div class="route-tooltip" id="routeTooltip" role="tooltip" aria-hidden="true">
+          <span class="route-tooltip-code"></span>
+          <span class="route-tooltip-city"></span>
+        </div>
+
+      </div><!-- /route-map-viewport -->
+
+      <!-- Legend -->
+      <div class="route-map-legend">
+        <span>
+          <svg width="22" height="8"><line x1="0" y1="4" x2="22" y2="4" stroke="#888" stroke-width="2" stroke-linecap="round"/></svg>
+          Outbound
+        </span>
+        <span>
+          <svg width="22" height="8"><line x1="0" y1="4" x2="22" y2="4" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-dasharray="5,3"/></svg>
+          Return
+        </span>
+      </div>
+
+    </div><!-- /route-map-card -->
+
+    <div class="flights-container">
+
+      <!-- Tanmay -->
+      <div class="flight-accordion reveal" id="fa-tanmay">
+        <div class="flight-header" onclick="toggleFlight('fa-tanmay')">
+          <div class="flight-avatar" style="background: linear-gradient(135deg,#C0603A,#E8A030)">TB</div>
+          <div class="flight-info">
+            <div class="flight-name">Tanmay</div>
+            <div class="flight-route-preview">CVG → DFW → SFO · Jul 8 · <span class="flight-timezone">EDT</span></div>
+          </div>
+          <div class="flight-chevron">▼</div>
+        </div>
+        <div class="flight-body">
+          <div class="boarding-pass">
+            <div class="boarding-pass-header">✈ Boarding Pass · Cincinnati, OH <span class="flight-timezone" style="opacity:0.7">EDT (UTC−4)</span></div>
+            <div class="boarding-legs">
+              <div class="flight-leg">
+                <div class="flight-leg-label">Outbound · Wed Jul 8</div>
+                <div class="flight-segment">
+                  <div class="flight-airports"><span>CVG</span><span class="arrow">→</span><span>DFW</span></div>
+                  <div class="flight-detail">AA 1713 · 11:19 AM EDT → 12:45 PM CDT</div>
+                  <span class="flight-duration">⏱ 2h 26m</span>
+                </div>
+                <div class="layover-chip">3h 32m layover at DFW — Dallas/Fort Worth</div>
+                <div class="flight-segment">
+                  <div class="flight-airports"><span>DFW</span><span class="arrow">→</span><span>SFO</span></div>
+                  <div class="flight-detail">AA 2810 · 4:17 PM CDT → 5:59 PM PDT</div>
+                  <span class="flight-duration">⏱ 3h 42m</span>
+                </div>
+              </div>
+              <div class="flight-leg">
+                <div class="flight-leg-label">Return · Mon Jul 13</div>
+                <div class="flight-segment">
+                  <div class="flight-airports"><span>SFO</span><span class="arrow">→</span><span>SNA</span></div>
+                  <div class="flight-detail">F9 3582 · 5:26 PM PDT → 7:08 PM PDT</div>
+                  <span class="flight-duration">⏱ 1h 42m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flight-totals">
+            <div class="flight-total-item flight-total-outbound">
+              <span class="label">Outbound</span><span class="value">6h 8m total</span>
+            </div>
+            <div class="flight-total-item flight-total-return">
+              <span class="label">Return</span><span class="value">1h 42m</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tejas -->
+      <div class="flight-accordion reveal reveal-delay-1" id="fa-tejas">
+        <div class="flight-header" onclick="toggleFlight('fa-tejas')">
+          <div class="flight-avatar" style="background: linear-gradient(135deg,#4A9B8E,#2B7A6F)">TK</div>
+          <div class="flight-info">
+            <div class="flight-name">Tejas</div>
+            <div class="flight-route-preview">PHX → SFO · Jul 8 · staying until Jul 15 · <span class="flight-timezone">MST</span></div>
+          </div>
+          <div class="flight-chevron">▼</div>
+        </div>
+        <div class="flight-body">
+          <div class="boarding-pass">
+            <div class="boarding-pass-header">✈ Boarding Pass · Phoenix, AZ <span class="flight-timezone" style="opacity:0.7">MST (UTC−7)</span></div>
+            <div class="boarding-legs">
+              <div class="flight-leg">
+                <div class="flight-leg-label">Outbound · Wed Jul 8</div>
+                <div class="flight-segment">
+                  <div class="flight-airports"><span>PHX</span><span class="arrow">→</span><span>SFO</span></div>
+                  <div class="flight-detail">F9 1191 · 2:02 PM MST → 4:11 PM PDT</div>
+                  <span class="flight-duration">⏱ 2h 9m</span>
+                </div>
+              </div>
+              <div class="flight-leg">
+                <div class="flight-leg-label">Return · Wed Jul 15 (+2 days)</div>
+                <div class="flight-segment">
+                  <div class="flight-airports"><span>SFO</span><span class="arrow">→</span><span>PHX</span></div>
+                  <div class="flight-detail">F9 2538 · 7:08 PM PDT → 9:18 PM MST</div>
+                  <span class="flight-duration">⏱ 2h 10m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flight-totals">
+            <div class="flight-total-item flight-total-outbound">
+              <span class="label">Outbound</span><span class="value">2h 9m</span>
+            </div>
+            <div class="flight-total-item flight-total-return">
+              <span class="label">Return</span><span class="value">2h 10m</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kinjal -->
+      <div class="flight-accordion reveal reveal-delay-2" id="fa-kinjal">
+        <div class="flight-header" onclick="toggleFlight('fa-kinjal')">
+          <div class="flight-avatar" style="background: linear-gradient(135deg,#8B5CF6,#6D28D9)">KP</div>
+          <div class="flight-info">
+            <div class="flight-name">Kinjal</div>
+            <div class="flight-route-preview">SEA → SFO · Jul 9 · <span class="flight-timezone">PDT</span></div>
+          </div>
+          <div class="flight-chevron">▼</div>
+        </div>
+        <div class="flight-body">
+          <div class="boarding-pass">
+            <div class="boarding-pass-header">✈ Boarding Pass · Seattle, WA <span class="flight-timezone" style="opacity:0.7">PDT (UTC−7)</span></div>
+            <div class="boarding-legs">
+              <div class="flight-leg">
+                <div class="flight-leg-label">Outbound · Thu Jul 9</div>
+                <div class="flight-segment">
+                  <div class="flight-airports"><span>SEA</span><span class="arrow">→</span><span>SFO</span></div>
+                  <div class="flight-detail">AS 590 · 8:42 PM PDT → 10:55 PM PDT</div>
+                  <span class="flight-duration">⏱ 2h 13m</span>
+                </div>
+              </div>
+              <div class="flight-leg">
+                <div class="flight-leg-label">Return · Mon Jul 13</div>
+                <div class="flight-segment">
+                  <div class="flight-airports"><span>SFO</span><span class="arrow">→</span><span>SEA</span></div>
+                  <div class="flight-detail">AS 591 · 8:28 PM PDT → 10:41 PM PDT</div>
+                  <span class="flight-duration">⏱ 2h 13m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flight-totals">
+            <div class="flight-total-item flight-total-outbound">
+              <span class="label">Outbound</span><span class="value">2h 13m</span>
+            </div>
+            <div class="flight-total-item flight-total-return">
+              <span class="label">Return</span><span class="value">2h 13m</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Antara -->
+      <div class="flight-accordion reveal reveal-delay-3" id="fa-antara">
+        <div class="flight-header" onclick="toggleFlight('fa-antara')">
+          <div class="flight-avatar" style="background: linear-gradient(135deg,#EC4899,#BE185D)">AN</div>
+          <div class="flight-info">
+            <div class="flight-name">Antara</div>
+            <div class="flight-route-preview">SNA → SFO · Jul 9 · <span class="flight-timezone">PDT</span></div>
+          </div>
+          <div class="flight-chevron">▼</div>
+        </div>
+        <div class="flight-body">
+          <div class="boarding-pass">
+            <div class="boarding-pass-header">✈ Boarding Pass · Santa Ana, CA <span class="flight-timezone" style="opacity:0.7">PDT (UTC−7)</span></div>
+            <div class="boarding-legs">
+              <div class="flight-leg">
+                <div class="flight-leg-label">Outbound · Thu Jul 9</div>
+                <div class="flight-segment">
+                  <div class="flight-airports"><span>SNA</span><span class="arrow">→</span><span>SFO</span></div>
+                  <div class="flight-detail">AS 3495 · 8:25 PM PDT → 10:03 PM PDT</div>
+                  <span class="flight-duration">⏱ 1h 38m</span>
+                </div>
+              </div>
+              <div class="flight-leg">
+                <div class="flight-leg-label">Return · Mon Jul 13</div>
+                <div class="flight-segment">
+                  <div class="flight-airports"><span>SFO</span><span class="arrow">→</span><span>SNA</span></div>
+                  <div class="flight-detail">AS 3244 · 6:35 AM PDT → 8:15 AM PDT</div>
+                  <span class="flight-duration">⏱ 1h 40m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flight-totals">
+            <div class="flight-total-item flight-total-outbound">
+              <span class="label">Outbound</span><span class="value">1h 38m</span>
+            </div>
+            <div class="flight-total-item flight-total-return">
+              <span class="label">Return</span><span class="value">1h 40m</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vaishnovi -->
+      <div class="flight-accordion reveal reveal-delay-4" id="fa-vaish">
+        <div class="flight-header" onclick="toggleFlight('fa-vaish')">
+          <div class="flight-avatar" style="background: linear-gradient(135deg,#F59E0B,#D97706)">VS</div>
+          <div class="flight-info">
+            <div class="flight-name">Vaishnovi</div>
+            <div class="flight-route-preview">BOS → SFO · Jul 9 · <span class="flight-timezone">EDT</span></div>
+          </div>
+          <div class="flight-chevron">▼</div>
+        </div>
+        <div class="flight-body">
+          <div class="boarding-pass">
+            <div class="boarding-pass-header">✈ Boarding Pass · Boston, MA <span class="flight-timezone" style="opacity:0.7">EDT (UTC−4)</span></div>
+            <div class="boarding-legs">
+              <div class="flight-leg">
+                <div class="flight-leg-label">Outbound · Thu Jul 9</div>
+                <div class="flight-segment">
+                  <div class="flight-airports"><span>BOS</span><span class="arrow">→</span><span>SFO</span></div>
+                  <div class="flight-detail">DL 577 · 7:20 AM EDT → 10:51 AM PDT</div>
+                  <span class="flight-duration">⏱ 6h 31m</span>
+                </div>
+              </div>
+              <div class="flight-leg">
+                <div class="flight-leg-label">Return · Mon Jul 13</div>
+                <div class="flight-segment">
+                  <div class="flight-airports"><span>SFO</span><span class="arrow">→</span><span>BOS</span></div>
+                  <div class="flight-detail">DL 1645 · 10:10 PM PDT → 6:45 AM+1 EDT</div>
+                  <span class="flight-duration">⏱ 5h 35m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flight-totals">
+            <div class="flight-total-item flight-total-outbound">
+              <span class="label">Outbound</span><span class="value">6h 31m</span>
+            </div>
+            <div class="flight-total-item flight-total-return">
+              <span class="label">Return</span><span class="value">5h 35m</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Places to Explore -->
+  <section id="places" class="places">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Don't Miss</span>
+      <h2>Places to Explore</h2>
+      <p>The full hit-list — beaches, cliffs, sea lions, and more.</p>
+    </div>
+
+    <div class="places-tabs reveal">
+      <div class="tab-bar" id="tab-bar">
+        <div class="tab-indicator" id="tab-indicator"></div>
+        <button class="tab-btn active" data-tab="big-sur">🏔️ Big Sur & Coast</button>
+        <button class="tab-btn" data-tab="monterey">🦭 Monterey & Carmel</button>
+        <button class="tab-btn" data-tab="sf">🌉 San Francisco</button>
+      </div>
+
+      <!-- Big Sur & Coast -->
+      <div class="tab-content active" data-tab="big-sur">
+        <ul class="places-list">
+          <li class="place-item"><strong>Henry Cowell Redwoods State Park</strong> — Redwood grove, Fremont Tree, observation deck<span class="place-duration">1–2 hrs</span></li>
+          <li class="place-item"><strong>Bixby Bridge</strong> — Iconic arch bridge, best photography stop<span class="place-duration">30–45 min</span></li>
+          <li class="place-item"><strong>Big Sur River Gorge</strong> — Swimming in summer, multiple trails<span class="place-duration">30–90 min</span></li>
+          <li class="place-item"><strong>Pfeiffer Big Sur State Park</strong> — Redwood walks, river trails, observation points<span class="place-duration">1–3 hrs</span></li>
+          <li class="place-item"><strong>McWay Falls</strong> — Famous waterfall-to-beach viewpoint trail<span class="place-duration">30–45 min</span></li>
+          <li class="place-item"><strong>Pfeiffer Beach</strong> — Purple sand, Keyhole Rock, sunset views<span class="place-duration">1 hr</span></li>
+          <li class="place-item"><strong>Partington Cove</strong> — Coastal tunnel hike<span class="place-duration">45–60 min</span></li>
+          <li class="place-item"><strong>Garrapata State Park</strong> — Wildflowers, coastal cliffs, beach<span class="place-duration">45–90 min</span></li>
+          <li class="place-item"><strong>Shark Fin Cove</strong> — Unique rock formation between Santa Cruz &amp; Monterey<span class="place-duration">30 min</span></li>
+        </ul>
+        <div class="places-category-card">
+          <strong>🍽️ Restaurants</strong>
+          <span>Big Sur Bakery · Big Sur Roadhouse · Cafe Kevah · Nepenthe</span>
+        </div>
+      </div>
+
+      <!-- Monterey & Carmel -->
+      <div class="tab-content" data-tab="monterey">
+        <ul class="places-list">
+          <li class="place-item"><strong>Point Lobos State Reserve</strong> — China Cove, Bird Island Trail, Sea Lion Point, Cypress Grove<span class="place-duration">2–3 hrs</span></li>
+          <li class="place-item"><strong>Carmel-by-the-Sea</strong> — Beach, Ocean Ave shops, galleries, wine tasting, Carmel Mission<span class="place-duration">1–2 hrs</span></li>
+          <li class="place-item"><strong>17 Mile Drive</strong> — Lone Cypress, Seal Rock, Bird Rock, Pebble Beach, Cypress Point Lookout<span class="place-duration">2–3 hrs</span></li>
+          <li class="place-item"><strong>Monterey Bay Aquarium</strong> — Major attraction, sea otters<span class="place-duration">2–3 hrs</span></li>
+          <li class="place-item"><strong>Cannery Row</strong> — Historic district, shops, restaurants<span class="place-duration">1 hr</span></li>
+          <li class="place-item"><strong>Old Fisherman's Wharf</strong> — Pier, sea lions, fishing boats<span class="place-duration">1 hr</span></li>
+          <li class="place-item"><strong>Pacific Grove: Lovers Point Park</strong> — Beach, tide pools<span class="place-duration">30 min</span></li>
+          <li class="place-item"><strong>Whale Watching</strong> — Optional tour from Carmel<span class="place-duration">3–4 hrs</span></li>
+        </ul>
+        <div class="places-category-card">
+          <strong>🍽️ Restaurants</strong>
+          <span>Old Fisherman's Grotto · Rosine's Restaurant · Alvarado Street Brewery · La Bicyclette</span>
+        </div>
+      </div>
+
+      <!-- San Francisco -->
+      <div class="tab-content" data-tab="sf">
+        <ul class="places-list">
+          <li class="place-item"><strong>Golden Gate Bridge Walk</strong> — Bay views, iconic landmark<span class="place-duration">1–2 hrs</span></li>
+          <li class="place-item"><strong>Baker Beach</strong> — Best GGB photography spot<span class="place-duration">45 min</span></li>
+          <li class="place-item"><strong>Marshall's Beach</strong> — Less crowded, excellent bridge view<span class="place-duration">45 min</span></li>
+          <li class="place-item"><strong>Palace of Fine Arts</strong> — Rotunda, lagoon, architecture<span class="place-duration">30 min</span></li>
+          <li class="place-item"><strong>Lands End Trail</strong> — Coastal hike, stunning views<span class="place-duration">1.5 hrs</span></li>
+          <li class="place-item"><strong>Lombard Street</strong> — The crooked one<span class="place-duration">20 min</span></li>
+          <li class="place-item"><strong>Fisherman's Wharf &amp; Pier 39</strong> — Sea lions, clam chowder<span class="place-duration">1 hr</span></li>
+          <li class="place-item"><strong>Chinatown</strong> — Largest Chinese enclave outside Asia<span class="place-duration">1 hr</span></li>
+          <li class="place-item"><strong>Twin Peaks</strong> — City panorama<span class="place-duration">30 min</span></li>
+          <li class="place-item"><strong>Painted Ladies at Alamo Square</strong> — Victorian houses<span class="place-duration">20 min</span></li>
+          <li class="place-item"><strong>Fort Point</strong> — Under GGB, military fort<span class="place-duration">45 min</span></li>
+          <li class="place-item"><strong>Point Reyes Lighthouse</strong> — North of SF, scenic drive<span class="place-duration">2–3 hrs</span></li>
+          <li class="place-item"><strong>Alcatraz Island</strong> — Book weeks ahead!<span class="place-duration">3 hrs</span></li>
+        </ul>
+        <div class="places-category-card" style="margin-bottom:1rem;">
+          <strong>🏘️ Neighborhoods</strong>
+          <span>North Beach (Italian) · Mission District (murals, food) · Haight-Ashbury (hippie culture)</span>
+        </div>
+        <div class="places-category-card" style="margin-bottom:1rem;">
+          <strong>🏛️ Museums</strong>
+          <span>California Academy of Sciences · Exploratorium · SFMOMA</span>
+        </div>
+        <div class="places-category-card">
+          <strong>🍽️ Restaurants</strong>
+          <span>Tony's Pizza Napoletana · Blue Bottle Coffee · Scoma's · Fog Harbor Fish House</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Weather -->
+  <div class="weather reveal">
+    <div class="weather-inner">
+      <div class="weather-icons">
+        <span>☁️</span>
+        <span>🌊</span>
+      </div>
+      <div class="weather-text">
+        <p class="weather-title">Karl the Fog is Real</p>
+        <p>July in Big Sur, Monterey &amp; SF = marine layer mornings, 55–65°F even in summer. Don't be fooled — pack a jacket. It's colder than you think.</p>
+        <div class="temp-range">
+          <span>55°F</span>
+          <div class="temp-bar"></div>
+          <span>68°F</span>
+        </div>
+        <a href="https://wttr.in/San+Francisco" target="_blank" rel="noopener">Check live SF forecast →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Photo Gallery -->
+  <section id="gallery" class="gallery">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Visual Vibes</span>
+      <h2>Trip Photos</h2>
+      <p>More coming after Jul 13 — stay tuned.</p>
+    </div>
+    <div class="gallery-grid" id="gallery-grid">
+      <div class="gallery-item reveal">
+        <img src="images/sf-website/sf-website-hero-road-trip.png" alt="California coastal road trip" loading="lazy" class="gallery-image">
+        <div class="gallery-caption">California Coast</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1">
+        <img src="images/sf-website/sf-website-big-sur-bixby.png" alt="Big Sur and Bixby Bridge" loading="lazy" class="gallery-image">
+        <div class="gallery-caption">Bixby Bridge · Big Sur</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2">
+        <img src="images/sf-website/sf-website-monterey-carmel.png" alt="Monterey and Carmel coast" loading="lazy" class="gallery-image">
+        <div class="gallery-caption">Monterey Bay</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-3">
+        <img src="images/sf-website/sf-website-golden-gate-point-reyes.png" alt="Golden Gate Bridge" loading="lazy" class="gallery-image">
+        <div class="gallery-caption">Golden Gate Bridge · SF</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-4">
+        <img src="images/sf-travel-site/accomodation-night-1-comfort-inn.png" alt="Monterey accommodation" loading="lazy" class="gallery-image">
+        <div class="gallery-caption">Night 1 · Monterey</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-5">
+        <img src="images/sf-travel-site/accomodation-night-2-airbnb-sf.png" alt="San Francisco accommodation" loading="lazy" class="gallery-image">
+        <div class="gallery-caption">Night 2 · San Francisco</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Overlay -->
+  <div id="lightbox" class="lightbox" style="display:none;">
+    <div class="lightbox-overlay"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <button class="lightbox-prev" aria-label="Previous">&#10094;</button>
+      <img id="lightbox-image" src="" alt="" class="lightbox-image">
+      <button class="lightbox-next" aria-label="Next">&#10095;</button>
+      <div class="lightbox-counter"><span id="lightbox-current">1</span> / <span id="lightbox-total">6</span></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-quote">"Good friends, great roads,<br>and unforgettable views."</p>
+      <p class="footer-trip">San Francisco Road Trip · Jul 9–13, 2026</p>
+      <div class="footer-people">
+        <span class="footer-chip" style="animation-delay:0.1s">Tanmay</span>
+        <span class="footer-chip" style="animation-delay:0.2s">Tejas</span>
+        <span class="footer-chip" style="animation-delay:0.3s">Kinjal</span>
+        <span class="footer-chip" style="animation-delay:0.4s">Antara</span>
+        <span class="footer-chip" style="animation-delay:0.5s">Vaishnovi</span>
+      </div>
+      <a href="#overview" class="back-to-top">↑ Back to top</a>
+    </div>
+  </footer>
+
+  <script>
+    // ── Scroll Progress Bar ──────────────────────────────────
+    const progressBar = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = (scrolled / total * 100) + '%';
+    }, { passive: true });
+
+    // ── Countdown Timer ──────────────────────────────────────
+    const countdownPill = document.getElementById('countdown-pill');
+    function updateCountdown() {
+      const target = new Date('2026-07-09T00:00:00');
+      const now = new Date();
+      const diff = target - now;
+      if (diff <= 0) {
+        countdownPill.textContent = '🎉 Trip is happening!';
+        return;
+      }
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      countdownPill.textContent = `⏳ ${days} days to go`;
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 60000);
+
+    // ── Intersection Observer — Reveal + Route Connectors ────
+    const revealEls = document.querySelectorAll('.reveal');
+    const connectors = document.querySelectorAll('.route-connector');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // Trigger route connectors when route strip enters view
+    const routeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          connectors.forEach((c, i) => {
+            setTimeout(() => c.classList.add('animate'), i * 120);
+          });
+          routeObserver.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+    const routeNodes = document.getElementById('route-nodes');
+    if (routeNodes) routeObserver.observe(routeNodes);
+
+    // ── Route Node → Day Card Scroll ─────────────────────────
+    document.querySelectorAll('.route-node[data-target]').forEach(node => {
+      node.addEventListener('click', () => {
+        const target = document.getElementById(node.dataset.target);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+    });
+
+    // ── Nav Scroll-Spy ────────────────────────────────────────
+    const sections = document.querySelectorAll('section[id], .route-strip, .weather');
+    const navLinks = document.querySelectorAll('.nav-links a[data-section]');
+
+    const spyObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id || entry.target.closest('[id]')?.id;
+          navLinks.forEach(link => {
+            link.classList.toggle('active', link.dataset.section === id);
+          });
+        }
+      });
+    }, { threshold: 0.4 });
+
+    document.querySelectorAll('section[id]').forEach(s => spyObserver.observe(s));
+
+    // ── Flight Accordion ──────────────────────────────────────
+    function toggleFlight(id) {
+      const accordion = document.getElementById(id);
+      const isOpen = accordion.classList.contains('open');
+      document.querySelectorAll('.flight-accordion').forEach(a => a.classList.remove('open'));
+      if (!isOpen) accordion.classList.add('open');
+    }
+
+    // ── Flight Route Map ──────────────────────────────────────
+    const AIRPORTS = {
+      CVG: { x: 651, y: 284, code: 'CVG', city: 'Cincinnati, OH' },
+      DFW: { x: 472, y: 409, code: 'DFW', city: 'Dallas/Fort Worth, TX' },
+      SFO: { x: 107, y: 267, code: 'SFO', city: 'San Francisco, CA' },
+      SNA: { x: 154, y: 356, code: 'SNA', city: 'Orange County, CA' },
+      PHX: { x: 242, y: 378, code: 'PHX', city: 'Phoenix, AZ' },
+      SEA: { x: 159, y:  90, code: 'SEA', city: 'Seattle, WA' },
+      BOS: { x: 827, y: 186, code: 'BOS', city: 'Boston, MA' },
+    };
+
+    const TRAVELERS = [
+      {
+        id: 'tanmay', label: 'Tanmay', initials: 'TB',
+        colorOut: '#C0603A', colorRet: '#E8A030',
+        segments: [
+          { from: 'CVG', to: 'DFW', type: 'out' },
+          { from: 'DFW', to: 'SFO', type: 'out' },
+          { from: 'SFO', to: 'SNA', type: 'ret' },
+        ]
+      },
+      {
+        id: 'tejas', label: 'Tejas', initials: 'TK',
+        colorOut: '#4A9B8E', colorRet: '#2B7A6F',
+        segments: [
+          { from: 'PHX', to: 'SFO', type: 'out' },
+          { from: 'SFO', to: 'PHX', type: 'ret' },
+        ]
+      },
+      {
+        id: 'kinjal', label: 'Kinjal', initials: 'KP',
+        colorOut: '#8B5CF6', colorRet: '#6D28D9',
+        segments: [
+          { from: 'SEA', to: 'SFO', type: 'out' },
+          { from: 'SFO', to: 'SEA', type: 'ret' },
+        ]
+      },
+      {
+        id: 'antara', label: 'Antara', initials: 'AN',
+        colorOut: '#EC4899', colorRet: '#BE185D',
+        segments: [
+          { from: 'SNA', to: 'SFO', type: 'out' },
+          { from: 'SFO', to: 'SNA', type: 'ret' },
+        ]
+      },
+      {
+        id: 'vaishnovi', label: 'Vaishnovi', initials: 'VS',
+        colorOut: '#F59E0B', colorRet: '#D97706',
+        segments: [
+          { from: 'BOS', to: 'SFO', type: 'out' },
+          { from: 'SFO', to: 'BOS', type: 'ret' },
+        ]
+      },
+    ];
+
+    (function initRouteMap() {
+      const svg = document.getElementById('routeMapSVG');
+      const baseSvg = document.getElementById('usBaseSVG');
+      const defs = document.getElementById('routeMapDefs');
+      const pinsGroup = document.getElementById('airportPins');
+      const tooltip = document.getElementById('routeTooltip');
+      const viewport = document.getElementById('routeMapViewport');
+      if (!svg) return;
+
+      // ── ViewBox zoom per traveler ──────────────────────────────
+      const VIEWS = {
+        all:       [37,   0, 860, 538],  // all 7 airports
+        tanmay:    [37, 124, 684, 428],  // CVG+DFW+SFO+SNA
+        tejas:     [0,  197, 402, 251],  // PHX+SFO
+        kinjal:    [0,   20, 507, 317],  // SEA+SFO
+        antara:    [0,  197, 366, 229],  // SNA+SFO
+        vaishnovi: [37,   0, 860, 538],  // BOS+SFO (full map)
+      };
+
+      let currentView = [0, 0, 960, 600];
+      let animFrame = null;
+
+      function animateViewBox(target, duration) {
+        if (duration === undefined) duration = 420;
+        const start = currentView.slice();
+        const startTime = performance.now();
+        if (animFrame) cancelAnimationFrame(animFrame);
+        function step(now) {
+          const t = Math.min((now - startTime) / duration, 1);
+          const ease = t < 0.5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3) / 2;
+          const v = start.map((s, i) => s + (target[i] - s) * ease);
+          const vb = v[0] + ' ' + v[1] + ' ' + v[2] + ' ' + v[3];
+          baseSvg.setAttribute('viewBox', vb);
+          svg.setAttribute('viewBox', vb);
+          if (t < 1) {
+            animFrame = requestAnimationFrame(step);
+          } else {
+            currentView = target.slice();
+          }
+        }
+        animFrame = requestAnimationFrame(step);
+      }
+
+      function svgEl(tag, attrs) {
+        const el = document.createElementNS('http://www.w3.org/2000/svg', tag);
+        for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+        return el;
+      }
+
+      function controlPoint(ax, ay, bx, by, curvature) {
+        const mx = (ax + bx) / 2, my = (ay + by) / 2;
+        const dx = bx - ax, dy = by - ay;
+        const len = Math.sqrt(dx * dx + dy * dy) || 1;
+        return {
+          cx: mx + (-dy / len) * curvature * len,
+          cy: my + (dx  / len) * curvature * len,
+        };
+      }
+
+      // Arrowhead markers
+      TRAVELERS.forEach(t => {
+        ['out', 'ret'].forEach(type => {
+          const color = type === 'out' ? t.colorOut : t.colorRet;
+          const marker = svgEl('marker', {
+            id: `arrow-${t.id}-${type}`,
+            markerWidth: '7', markerHeight: '7',
+            refX: '5.5', refY: '3.5', orient: 'auto',
+            markerUnits: 'strokeWidth',
+          });
+          marker.appendChild(svgEl('path', { d: 'M0,0 L0,7 L7,3.5 z', fill: color }));
+          defs.appendChild(marker);
+        });
+      });
+
+      // Route groups
+      TRAVELERS.forEach(t => {
+        const g = svgEl('g', { class: 'route-group', 'data-traveler': t.id });
+        t.segments.forEach(seg => {
+          const A = AIRPORTS[seg.from], B = AIRPORTS[seg.to];
+          // out arcs curve upward (north), ret arcs curve downward (south)
+          const curvature = seg.type === 'out' ? -0.22 : 0.18;
+          const { cx, cy } = controlPoint(A.x, A.y, B.x, B.y, curvature);
+          const attrs = {
+            class: `flight-arc arc-${seg.type}`,
+            d: `M${A.x},${A.y} Q${cx},${cy} ${B.x},${B.y}`,
+            stroke: seg.type === 'out' ? t.colorOut : t.colorRet,
+            'stroke-width': '2.4',
+            fill: 'none',
+            'stroke-linecap': 'round',
+            'marker-end': `url(#arrow-${t.id}-${seg.type})`,
+          };
+          if (seg.type === 'ret') attrs['stroke-dasharray'] = '6,4';
+          g.appendChild(svgEl('path', attrs));
+        });
+        // Insert before pins group so pins render on top
+        svg.insertBefore(g, pinsGroup);
+      });
+
+      // Airport pins
+      const usedCodes = [...new Set(TRAVELERS.flatMap(t => t.segments.flatMap(s => [s.from, s.to])))];
+      usedCodes.forEach(code => {
+        const ap = AIRPORTS[code];
+
+        // Large invisible hit area
+        const hit = svgEl('circle', {
+          cx: ap.x, cy: ap.y, r: '13',
+          fill: 'transparent', 'data-code': code, 'data-city': ap.city,
+          style: 'cursor:default',
+        });
+
+        // Visible dot
+        const dot = svgEl('circle', {
+          cx: ap.x, cy: ap.y, r: '5',
+          fill: 'white', stroke: '#1B2A4A', 'stroke-width': '2',
+          'pointer-events': 'none',
+        });
+
+        // Code label
+        const label = svgEl('text', {
+          x: ap.x, y: ap.y - 10,
+          'text-anchor': 'middle', 'font-size': '9.5',
+          fill: '#1B2A4A', 'font-weight': '700',
+          class: 'airport-label',
+        });
+        label.textContent = code;
+
+        // Tooltip on hover
+        hit.addEventListener('mouseenter', () => {
+          tooltip.querySelector('.route-tooltip-code').textContent = code;
+          tooltip.querySelector('.route-tooltip-city').textContent = ap.city;
+          tooltip.setAttribute('aria-hidden', 'false');
+          tooltip.classList.add('visible');
+          const vr = viewport.getBoundingClientRect();
+          const hr = hit.getBoundingClientRect();
+          tooltip.style.left = (hr.left - vr.left + hr.width / 2 - 20) + 'px';
+          tooltip.style.top  = (hr.top  - vr.top  - 52) + 'px';
+        });
+        hit.addEventListener('mouseleave', () => {
+          tooltip.classList.remove('visible');
+          tooltip.setAttribute('aria-hidden', 'true');
+        });
+        // Touch support
+        hit.addEventListener('touchstart', (e) => {
+          e.preventDefault();
+          hit.dispatchEvent(new MouseEvent('mouseenter'));
+          setTimeout(() => hit.dispatchEvent(new MouseEvent('mouseleave')), 1800);
+        }, { passive: false });
+
+        pinsGroup.appendChild(hit);
+        pinsGroup.appendChild(dot);
+        pinsGroup.appendChild(label);
+      });
+
+      // Filter logic
+      let activeFilter = 'all';
+
+      function applyFilter(traveler) {
+        document.querySelectorAll('.route-group').forEach(g => {
+          if (traveler === 'all') {
+            g.style.opacity = '0.55';
+          } else if (g.dataset.traveler === traveler) {
+            g.style.opacity = '1';
+          } else {
+            g.style.opacity = '0.1';
+          }
+        });
+        animateViewBox(VIEWS[traveler] || VIEWS.all);
+      }
+
+      applyFilter('all');
+
+      document.querySelectorAll('.route-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          activeFilter = chip.dataset.traveler;
+          document.querySelectorAll('.route-chip').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          applyFilter(activeFilter);
+        });
+        chip.addEventListener('mouseenter', () => {
+          if (chip.dataset.traveler !== activeFilter) applyFilter(chip.dataset.traveler);
+        });
+        chip.addEventListener('mouseleave', () => {
+          applyFilter(activeFilter);
+        });
+      });
+    })();
+
+    // ── Places Tab with Sliding Indicator ────────────────────
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    const tabIndicator = document.getElementById('tab-indicator');
+
+    function positionIndicator(btn) {
+      tabIndicator.style.left = btn.offsetLeft + 'px';
+      tabIndicator.style.width = btn.offsetWidth + 'px';
+    }
+
+    function switchTab(tab) {
+      tabButtons.forEach(b => b.classList.remove('active'));
+      tabContents.forEach(c => c.classList.remove('active'));
+      const activeBtn = Array.from(tabButtons).find(b => b.dataset.tab === tab);
+      const activeContent = document.querySelector(`.tab-content[data-tab="${tab}"]`);
+      if (activeBtn) { activeBtn.classList.add('active'); positionIndicator(activeBtn); }
+      if (activeContent) activeContent.classList.add('active');
+    }
+
+    tabButtons.forEach((btn, idx) => {
+      btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+      btn.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') { e.preventDefault(); tabButtons[(idx + 1) % tabButtons.length].focus(); switchTab(tabButtons[(idx + 1) % tabButtons.length].dataset.tab); }
+        if (e.key === 'ArrowLeft')  { e.preventDefault(); tabButtons[(idx - 1 + tabButtons.length) % tabButtons.length].focus(); switchTab(tabButtons[(idx - 1 + tabButtons.length) % tabButtons.length].dataset.tab); }
+      });
+    });
+
+    // Init indicator position
+    window.addEventListener('load', () => {
+      const activeBtn = document.querySelector('.tab-btn.active');
+      if (activeBtn) positionIndicator(activeBtn);
+    });
+    window.addEventListener('resize', () => {
+      const activeBtn = document.querySelector('.tab-btn.active');
+      if (activeBtn) positionIndicator(activeBtn);
+    });
+
+    // ── Lightbox ──────────────────────────────────────────────
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxCurrent = document.getElementById('lightbox-current');
+    const galleryImages = document.querySelectorAll('.gallery-image');
+    let currentImageIdx = 0;
+
+    document.getElementById('lightbox-total').textContent = galleryImages.length;
+
+    function showLightbox(idx) {
+      currentImageIdx = idx;
+      lightboxImage.src = galleryImages[idx].src;
+      lightboxImage.alt = galleryImages[idx].alt;
+      lightboxCurrent.textContent = idx + 1;
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      lightbox.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+    function nextImage() { showLightbox((currentImageIdx + 1) % galleryImages.length); }
+    function prevImage() { showLightbox((currentImageIdx - 1 + galleryImages.length) % galleryImages.length); }
+
+    galleryImages.forEach((img, idx) => {
+      img.parentElement.style.cursor = 'pointer';
+      img.parentElement.addEventListener('click', () => showLightbox(idx));
+    });
+
+    document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+    document.querySelector('.lightbox-next').addEventListener('click', nextImage);
+    document.querySelector('.lightbox-prev').addEventListener('click', prevImage);
+    document.querySelector('.lightbox-overlay').addEventListener('click', closeLightbox);
+
+    document.addEventListener('keydown', (e) => {
+      if (lightbox.style.display === 'flex') {
+        if (e.key === 'ArrowRight') nextImage();
+        if (e.key === 'ArrowLeft') prevImage();
+        if (e.key === 'Escape') closeLightbox();
+      }
+    });
+  </script>
+  <script>
+    (function() {
+document.querySelectorAll('.flight-detail').forEach(el => {
+        el.style.cursor = 'pointer';
+        el.title = 'Click to view flight status';
+        el.addEventListener('click', () => {
+          const m = el.textContent.match(/^([A-Z0-9]{1,3}) (\d+)/);
+          if (!m) return;
+          const code = m[1] + m[2];
+          window.open('https://www.flightaware.com/live/flight/' + code, '_blank', 'noopener');
+        });
+      });
+    })();
+
+    document.querySelectorAll('.people-chip').forEach(chip => {
+      chip.addEventListener('mousemove', e => {
+        const r = chip.getBoundingClientRect();
+        const x = ((e.clientX - r.left) / r.width * 100).toFixed(1);
+        const y = ((e.clientY - r.top) / r.height * 100).toFixed(1);
+        chip.style.setProperty('--mx', x + '%');
+        chip.style.setProperty('--my', y + '%');
+      });
+    });
+  </script>
+</body>
+</html>
