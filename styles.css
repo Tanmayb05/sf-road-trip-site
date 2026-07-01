@@ -991,6 +991,20 @@ section {
 }
 .booking-link:hover { opacity: 0.85; text-decoration: none; }
 
+.receipt-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.875rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: var(--teal);
+  color: white;
+  transition: opacity 0.2s;
+}
+.receipt-link:hover { opacity: 0.85; text-decoration: none; }
+
 /* ============================================================
    FLIGHTS — BOARDING PASS
    ============================================================ */
@@ -1108,6 +1122,15 @@ section {
   border-bottom: 1px dashed rgba(27, 42, 74, 0.1);
 }
 .flight-leg:last-child { border-bottom: none; }
+
+.flight-leg-clickable {
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: background 0.15s;
+}
+.flight-leg-clickable:hover {
+  background: rgba(74, 155, 142, 0.06);
+}
 
 @media (min-width: 640px) {
   .flight-leg { border-bottom: none; border-right: 1px dashed rgba(27, 42, 74, 0.1); }
@@ -1943,6 +1966,16 @@ section {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer-quote-author {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 500;
+  opacity: 0.7;
+  margin-top: 0.5rem;
 }
 
 .footer-trip {
