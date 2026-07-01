@@ -977,6 +977,103 @@ section {
   border-top: 1px solid rgba(0,0,0,0.06);
 }
 
+.car-rental { background: var(--white); padding: 5rem 1.5rem; max-width: none; }
+
+.car-rental-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rental-cards {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.rental-price {
+  margin: 0.75rem 0;
+  padding: 0.75rem 1rem;
+  background: rgba(74, 155, 142, 0.1);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.rental-price-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--teal);
+  width: 100%;
+}
+.rental-price-amount {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--navy);
+}
+.rental-price-note {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-mid);
+}
+
+.rental-time-sep { display: inline; }
+
+@media (max-width: 480px) {
+  .rental-times {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .rental-time-sep { display: none; }
+}
+
+.rental-card {
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+.rental-card .stay-image-wrap {
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+.rental-card:hover {
+  transform: translateY(-8px) scale(1.015);
+  box-shadow: var(--shadow-lg);
+}
+.rental-card:hover .stay-image-wrap img {
+  transform: scale(1.1);
+}
+.rental-card:hover .night-pill {
+  transform: scale(1.05);
+}
+.rental-card:hover .stay-who {
+  background: rgba(192, 96, 58, 0.18);
+}
+.rental-card .night-pill {
+  transition: transform 0.3s var(--ease);
+}
+
+.rental-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.rental-features li {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--teal);
+  background: rgba(74, 155, 142, 0.1);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+}
+
 .booking-link {
   display: inline-flex;
   align-items: center;
@@ -1841,6 +1938,78 @@ section {
   .lightbox-close { top: -44px; right: 0; }
 }
 
+.avatar-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 10, 20, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2100;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.avatar-popup-overlay {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+.avatar-popup-card {
+  position: relative;
+  z-index: 2101;
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 2rem 2.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  animation: avatarPopIn 0.25s var(--ease);
+}
+
+@keyframes avatarPopIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.avatar-popup-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  background: rgba(27, 42, 74, 0.08);
+  border: none;
+  color: var(--navy);
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.avatar-popup-close:hover { background: rgba(27, 42, 74, 0.16); }
+
+#avatar-popup-image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+  background: var(--white);
+}
+
+#avatar-popup-name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
 /* ============================================================
    BIRTHDAY CELEBRATION
    ============================================================ */
@@ -2047,3 +2216,5 @@ section {
   section { page-break-inside: avoid; box-shadow: none; padding: 1.5rem 0; }
   .day-card, .stay-card { break-inside: avoid; }
 }
+
+[data-person] { cursor: pointer; }

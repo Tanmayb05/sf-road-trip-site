@@ -29,6 +29,7 @@
         <li><a href="#itinerary" data-section="itinerary" aria-label="Itinerary"><span class="nav-icon">📅</span><span class="nav-text">Itinerary</span></a></li>
         <li><a href="#stay" data-section="stay" aria-label="Stay"><span class="nav-icon">🏠</span><span class="nav-text">Stay</span></a></li>
         <li><a href="#flights" data-section="flights" aria-label="Flights"><span class="nav-icon">✈️</span><span class="nav-text">Flights</span></a></li>
+        <li><a href="#car-rental" data-section="car-rental" aria-label="Car Rental"><span class="nav-icon">🚙</span><span class="nav-text">Car</span></a></li>
         <li><a href="#places" data-section="places" aria-label="Places"><span class="nav-icon">📍</span><span class="nav-text">Places</span></a></li>
         <li><a href="#gallery" data-section="gallery" aria-label="Gallery"><span class="nav-icon">🖼️</span><span class="nav-text">Gallery</span></a></li>
       </ul>
@@ -46,11 +47,11 @@
         <span class="pill pill-countdown" id="countdown-pill">⏳ Loading…</span>
       </div>
       <div class="hero-people">
-        <span class="people-chip"><span class="people-avatar" style="background: linear-gradient(135deg,#C0603A,#E8A030)">TB</span>Tanmay</span>
-        <span class="people-chip"><span class="people-avatar" style="background: linear-gradient(135deg,#4A9B8E,#2B7A6F)">TK</span>Tejas</span>
-        <span class="people-chip"><span class="people-avatar" style="background: linear-gradient(135deg,#8B5CF6,#6D28D9)">KP</span>Kinjal</span>
-        <span class="people-chip"><span class="people-avatar" style="background: linear-gradient(135deg,#EC4899,#BE185D)">AN</span>Antara</span>
-        <span class="people-chip"><span class="people-avatar" style="background: linear-gradient(135deg,#F59E0B,#D97706)">VS</span>Vaishnovi</span>
+        <span class="people-chip" data-person="tanmay"><span class="people-avatar" style="background: linear-gradient(135deg,#C0603A,#E8A030)">TB</span>Tanmay</span>
+        <span class="people-chip" data-person="tejas"><span class="people-avatar" style="background: linear-gradient(135deg,#4A9B8E,#2B7A6F)">TK</span>Tejas</span>
+        <span class="people-chip" data-person="kinjal"><span class="people-avatar" style="background: linear-gradient(135deg,#8B5CF6,#6D28D9)">KP</span>Kinjal</span>
+        <span class="people-chip" data-person="antara"><span class="people-avatar" style="background: linear-gradient(135deg,#EC4899,#BE185D)">AN</span>Antara</span>
+        <span class="people-chip" data-person="vaishnovi"><span class="people-avatar" style="background: linear-gradient(135deg,#F59E0B,#D97706)">VS</span>Vaishnovi</span>
       </div>
     </div>
     <div class="hero-scroll-cue">
@@ -281,7 +282,7 @@
           </div>
           <div class="stay-content">
             <h3>Tejas Mama Mami's Place</h3>
-            <span class="stay-who">Tanmay & Tejas</span>
+            <span class="stay-who"><span data-person="tanmay">Tanmay</span> & <span data-person="tejas">Tejas</span></span>
             <p>325 Berry St Apt 425, San Francisco, CA</p>
             <p class="stay-time"><strong>Check-in:</strong> Wed Jul 8 · <strong>Check-out:</strong> Thu Jul 9</p>
           </div>
@@ -407,23 +408,23 @@
         <button class="route-chip active" data-traveler="all">
           <span class="route-chip-label">All Routes</span>
         </button>
-        <button class="route-chip" data-traveler="tanmay">
+        <button class="route-chip" data-traveler="tanmay" data-person="tanmay">
           <span class="route-chip-avatar" style="background:linear-gradient(135deg,#C0603A,#E8A030)">TB</span>
           <span class="route-chip-label">Tanmay</span>
         </button>
-        <button class="route-chip" data-traveler="tejas">
+        <button class="route-chip" data-traveler="tejas" data-person="tejas">
           <span class="route-chip-avatar" style="background:linear-gradient(135deg,#4A9B8E,#2B7A6F)">TK</span>
           <span class="route-chip-label">Tejas</span>
         </button>
-        <button class="route-chip" data-traveler="kinjal">
+        <button class="route-chip" data-traveler="kinjal" data-person="kinjal">
           <span class="route-chip-avatar" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9)">KP</span>
           <span class="route-chip-label">Kinjal</span>
         </button>
-        <button class="route-chip" data-traveler="antara">
+        <button class="route-chip" data-traveler="antara" data-person="antara">
           <span class="route-chip-avatar" style="background:linear-gradient(135deg,#EC4899,#BE185D)">AN</span>
           <span class="route-chip-label">Antara</span>
         </button>
-        <button class="route-chip" data-traveler="vaishnovi">
+        <button class="route-chip" data-traveler="vaishnovi" data-person="vaishnovi">
           <span class="route-chip-avatar" style="background:linear-gradient(135deg,#F59E0B,#D97706)">VS</span>
           <span class="route-chip-label">Vaishnovi</span>
         </button>
@@ -524,7 +525,7 @@
         <div class="flight-header" onclick="toggleFlight('fa-tanmay')">
           <div class="flight-avatar" style="background: linear-gradient(135deg,#C0603A,#E8A030)">TB</div>
           <div class="flight-info">
-            <div class="flight-name">Tanmay</div>
+            <div class="flight-name" data-person="tanmay">Tanmay</div>
             <div class="flight-route-preview">CVG → DFW → SFO · Jul 8 · <span class="flight-timezone">EDT</span></div>
           </div>
           <div class="flight-chevron">▼</div>
@@ -573,7 +574,7 @@
         <div class="flight-header" onclick="toggleFlight('fa-tejas')">
           <div class="flight-avatar" style="background: linear-gradient(135deg,#4A9B8E,#2B7A6F)">TK</div>
           <div class="flight-info">
-            <div class="flight-name">Tejas</div>
+            <div class="flight-name" data-person="tejas">Tejas</div>
             <div class="flight-route-preview">PHX → SFO · Jul 8 · staying until Jul 15 · <span class="flight-timezone">MST</span></div>
           </div>
           <div class="flight-chevron">▼</div>
@@ -616,7 +617,7 @@
         <div class="flight-header" onclick="toggleFlight('fa-kinjal')">
           <div class="flight-avatar" style="background: linear-gradient(135deg,#8B5CF6,#6D28D9)">KP</div>
           <div class="flight-info">
-            <div class="flight-name">Kinjal</div>
+            <div class="flight-name" data-person="kinjal">Kinjal</div>
             <div class="flight-route-preview">SEA → SFO · Jul 9 · <span class="flight-timezone">PDT</span></div>
           </div>
           <div class="flight-chevron">▼</div>
@@ -659,7 +660,7 @@
         <div class="flight-header" onclick="toggleFlight('fa-antara')">
           <div class="flight-avatar" style="background: linear-gradient(135deg,#EC4899,#BE185D)">AN</div>
           <div class="flight-info">
-            <div class="flight-name">Antara</div>
+            <div class="flight-name" data-person="antara">Antara</div>
             <div class="flight-route-preview">SNA → SFO · Jul 9 · <span class="flight-timezone">PDT</span></div>
           </div>
           <div class="flight-chevron">▼</div>
@@ -702,7 +703,7 @@
         <div class="flight-header" onclick="toggleFlight('fa-vaish')">
           <div class="flight-avatar" style="background: linear-gradient(135deg,#F59E0B,#D97706)">VS</div>
           <div class="flight-info">
-            <div class="flight-name">Vaishnovi</div>
+            <div class="flight-name" data-person="vaishnovi">Vaishnovi</div>
             <div class="flight-route-preview">BOS → SFO · Jul 9 · <span class="flight-timezone">EDT</span></div>
           </div>
           <div class="flight-chevron">▼</div>
@@ -740,6 +741,57 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- Car Rental -->
+  <section id="car-rental" class="car-rental">
+    <div class="car-rental-inner">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Getting Around</span>
+        <h2>Car Rental</h2>
+        <p>One SUV, four days, wherever the coast takes us.</p>
+      </div>
+      <div class="rental-cards">
+        <div class="rental-card reveal">
+          <div class="stay-image-wrap">
+            <img src="images/sf-website/sf-website-car-mazda.png" alt="Mazda CX-50 rental SUV" loading="lazy">
+            <span class="night-pill">Jul 9 – Jul 13 · 4 days</span>
+          </div>
+          <div class="stay-content">
+            <h3>Budget Intermediate SUV — Mazda CX-50 or similar</h3>
+            <span class="stay-who">Driver: <span data-person="vaishnovi">Vaishnovi Palaparthy</span></span>
+            <p class="rental-times">
+              <span class="rental-time-item"><strong>Pick-up:</strong> Jul 9, 2026, 11:30am</span>
+              <span class="rental-time-sep">&nbsp;·&nbsp;</span>
+              <span class="rental-time-item"><strong>Drop-off:</strong> Jul 13, 2026, 8:00pm</span>
+            </p>
+            <p><strong>Address:</strong> San Francisco Intl Apo, 780 Mcdonnell Rd, San Francisco, CA 94128</p>
+            <p><strong>Phone:</strong> 650-877-0998 · 24 Hours</p>
+            <div class="rental-price">
+              <span class="rental-price-label">Total price</span>
+              <span class="rental-price-amount">$428.39</span>
+              <span class="rental-price-note">Base $303.75 + Taxes/Fees $124.64 · Due at Agency</span>
+            </div>
+            <ul class="rental-features">
+              <li>Unlimited mileage</li>
+              <li>Automatic transmission</li>
+              <li>Air conditioning</li>
+              <li>Additional driver fee waived (Costco members)</li>
+            </ul>
+            <p class="stay-note">⚠️ Bring Costco membership card + driver's license at pickup.</p>
+            <details class="stay-confirmation">
+              <summary>View Confirmation</summary>
+              <p><strong>Costco Travel Conf:</strong> C494864705</p>
+              <p><strong>Budget Conf:</strong> 48966794US2</p>
+            </details>
+          </div>
+          <div class="stay-card-footer">
+            <a href="https://www.google.com/maps/search/?api=1&query=780+Mcdonnell+Rd,+San+Francisco,+CA+94128" target="_blank" rel="noopener" class="map-link">📍 Maps</a>
+            <a href="#" target="_blank" rel="noopener" class="receipt-link">🧾 Receipt</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -876,12 +928,22 @@
     </div>
   </div>
 
+  <!-- Avatar Popup -->
+  <div id="avatar-popup" class="avatar-popup" style="display:none;">
+    <div class="avatar-popup-overlay"></div>
+    <div class="avatar-popup-card">
+      <button class="avatar-popup-close" aria-label="Close">&times;</button>
+      <img id="avatar-popup-image" src="" alt="">
+      <div id="avatar-popup-name"></div>
+    </div>
+  </div>
+
   <!-- Birthday Celebration Overlay -->
   <div id="birthday-overlay" class="birthday-overlay" aria-hidden="true">
     <canvas id="confetti-canvas"></canvas>
     <div class="birthday-content">
       <div class="birthday-cake">🎂</div>
-      <h2 class="birthday-message">Happy Birthday Kinjal! 🎉</h2>
+      <h2 class="birthday-message">Happy Birthday <span data-person="kinjal">Kinjal</span>! 🎉</h2>
     </div>
   </div>
 
@@ -891,11 +953,11 @@
       <p class="footer-quote">"Don't Talk, Just Do" <span class="footer-quote-author">~Neha Dhupia</span></p>
       <p class="footer-trip">San Francisco Road Trip · Jul 9–13, 2026</p>
       <div class="footer-people">
-        <span class="footer-chip" style="animation-delay:0.1s">Tanmay</span>
-        <span class="footer-chip" style="animation-delay:0.2s">Tejas</span>
-        <span class="footer-chip" style="animation-delay:0.3s">Kinjal</span>
-        <span class="footer-chip" style="animation-delay:0.4s">Antara</span>
-        <span class="footer-chip" style="animation-delay:0.5s">Vaishnovi</span>
+        <span class="footer-chip" style="animation-delay:0.1s" data-person="tanmay">Tanmay</span>
+        <span class="footer-chip" style="animation-delay:0.2s" data-person="tejas">Tejas</span>
+        <span class="footer-chip" style="animation-delay:0.3s" data-person="kinjal">Kinjal</span>
+        <span class="footer-chip" style="animation-delay:0.4s" data-person="antara">Antara</span>
+        <span class="footer-chip" style="animation-delay:0.5s" data-person="vaishnovi">Vaishnovi</span>
       </div>
       <a href="#overview" class="back-to-top">↑ Back to top</a>
     </div>
@@ -1308,6 +1370,42 @@
         if (e.key === 'ArrowLeft') prevImage();
         if (e.key === 'Escape') closeLightbox();
       }
+    });
+
+    const PERSON_AVATARS = {
+      tanmay: { name: 'Tanmay', img: 'images/sf-website/memoji-tanmay.png' },
+      tejas: { name: 'Tejas', img: 'images/sf-website/memoji-tejas.png' },
+      vaishnovi: { name: 'Vaishnovi', img: 'images/sf-website/memoji-vaish.png' },
+      kinjal: { name: 'Kinjal', img: 'images/sf-website/memoji-kinjal2.png' },
+      antara: { name: 'Antara', img: 'images/sf-website/memoji-antara.png' },
+    };
+
+    const avatarPopup = document.getElementById('avatar-popup');
+    const avatarPopupImage = document.getElementById('avatar-popup-image');
+    const avatarPopupName = document.getElementById('avatar-popup-name');
+
+    function showAvatarPopup(personId) {
+      const person = PERSON_AVATARS[personId];
+      if (!person) return;
+      avatarPopupImage.src = person.img;
+      avatarPopupImage.alt = person.name;
+      avatarPopupName.textContent = person.name;
+      avatarPopup.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeAvatarPopup() {
+      avatarPopup.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('click', (e) => {
+      const trigger = e.target.closest('[data-person]');
+      if (trigger) showAvatarPopup(trigger.dataset.person);
+    });
+    document.querySelector('.avatar-popup-close').addEventListener('click', closeAvatarPopup);
+    document.querySelector('.avatar-popup-overlay').addEventListener('click', closeAvatarPopup);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && avatarPopup.style.display === 'flex') closeAvatarPopup();
     });
   </script>
 
